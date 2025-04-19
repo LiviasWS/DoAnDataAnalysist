@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -62,16 +62,58 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBConnection.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FBill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FBill.designer.cs">
+      <DependentUpon>FBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDetailSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDetailSP.designer.cs">
+      <DependentUpon>FDetailSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEditSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEditSP.designer.cs">
+      <DependentUpon>FEditSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSale.designer.cs">
+      <DependentUpon>FSale.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="UCQuantity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQuantity.Designer.cs">
+      <DependentUpon>UCQuantity.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FBill.resx">
+      <DependentUpon>FBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDetailSP.resx">
+      <DependentUpon>FDetailSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEditSP.resx">
+      <DependentUpon>FEditSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSale.resx">
+      <DependentUpon>FSale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,7 +123,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UCQuantity.resx">
+      <DependentUpon>UCQuantity.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -106,6 +152,32 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\arrow-right.png" />
+    <None Include="Resources\left-arrow1.png" />
+    <None Include="Resources\arrow-right1.png" />
+    <Content Include="Resources\background-login.jpg" />
+    <None Include="Resources\cafe1.png" />
+    <None Include="Resources\loginn1.png" />
+    <None Include="Resources\expresso1.png" />
+    <None Include="Resources\background-login1.jpg" />
+    <Content Include="Resources\cafe.png" />
+    <Content Include="Resources\cake.png" />
+    <Content Include="Resources\coffee-5246830_1280.jpg" />
+    <Content Include="Resources\credit-card.png" />
+    <Content Include="Resources\dollars.png" />
+    <Content Include="Resources\ellipsis.png" />
+    <Content Include="Resources\expresso.png" />
+    <Content Include="Resources\latte-art.png" />
+    <Content Include="Resources\left-arrow.png" />
+    <Content Include="Resources\login.png" />
+    <Content Include="Resources\loginn.png" />
+    <Content Include="Resources\orange-juice.png" />
+    <Content Include="Resources\plus.png" />
+    <Content Include="Resources\qr-code-scan.png" />
+    <Content Include="Resources\select-all.png" />
+    <Content Include="Resources\tea.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
