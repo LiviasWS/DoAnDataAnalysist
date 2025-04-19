@@ -3,8 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\tuankiet\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\tuankiet\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\tuankiet\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Cafeteria||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\tuankiet\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\tuankiet\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\tuankiet\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +49,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cafeteria",
+              "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Cafeteria.csproj",
+              "RelativeDocumentMoniker": "Cafeteria\\Cafeteria.csproj",
+              "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Cafeteria.csproj",
+              "RelativeToolTip": "Cafeteria\\Cafeteria.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-16T13:47:52.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Form1.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\Form1.cs",
+              "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Form1.cs",
+              "RelativeToolTip": "Cafeteria\\Form1.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAwDkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T13:47:16.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Program.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\Program.cs",
+              "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Program.cs",
+              "RelativeToolTip": "Cafeteria\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T13:42:57.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Form1.cs",
               "RelativeDocumentMoniker": "Cafeteria\\Form1.cs",

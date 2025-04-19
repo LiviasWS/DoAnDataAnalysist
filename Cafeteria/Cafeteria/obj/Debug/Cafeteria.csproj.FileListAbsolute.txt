@@ -1,0 +1,10 @@
+C:\Users\tuankiet\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\bin\Debug\Cafeteria.exe.config
+C:\Users\tuankiet\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\bin\Debug\Cafeteria.exe
+C:\Users\tuankiet\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\bin\Debug\Cafeteria.pdb
+C:\Users\tuankiet\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.csproj.AssemblyReference.cache
+C:\Users\tuankiet\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.Form1.resources
+C:\Users\tuankiet\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.Properties.Resources.resources
+C:\Users\tuankiet\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.csproj.GenerateResource.cache
+C:\Users\tuankiet\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.csproj.CoreCompileInputs.cache
+C:\Users\tuankiet\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.exe
+C:\Users\tuankiet\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.pdb
