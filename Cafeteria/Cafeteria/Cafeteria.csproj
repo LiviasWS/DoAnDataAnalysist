@@ -61,7 +61,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ChiTietDonHangDAO.cs" />
+    <Compile Include="DAO\DonHangDAO.cs" />
+    <Compile Include="DAO\HoaDonDAO.cs" />
+    <Compile Include="DAO\SanPhamDAO.cs" />
     <Compile Include="DBConnection.cs" />
+    <Compile Include="DTO\ChiTietDonHang.cs" />
+    <Compile Include="DTO\DonHang.cs" />
+    <Compile Include="DTO\HoaDon.cs" />
+    <Compile Include="DTO\SanPham.cs" />
     <Compile Include="FBill.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,5 +187,6 @@
     <Content Include="Resources\select-all.png" />
     <Content Include="Resources\tea.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

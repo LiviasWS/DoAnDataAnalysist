@@ -12,6 +12,7 @@ namespace Cafeteria
 {
     public partial class UCQuantity : UserControl
     {
+
         public UCQuantity()
         {
             InitializeComponent();

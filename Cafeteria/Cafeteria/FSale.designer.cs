@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.paymentAmout = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.orderDGV = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cbTable = new System.Windows.Forms.ComboBox();
@@ -40,15 +42,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.menuDGV = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuDGV)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,19 +59,41 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.paymentAmout);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnEdit);
             this.panel1.Controls.Add(this.btnNext);
             this.panel1.Controls.Add(this.btnRemove);
-            this.panel1.Controls.Add(this.dataGridView2);
+            this.panel1.Controls.Add(this.orderDGV);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.cbTable);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(914, 217);
+            this.panel1.Location = new System.Drawing.Point(691, 217);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(341, 583);
+            this.panel1.Size = new System.Drawing.Size(564, 583);
             this.panel1.TabIndex = 0;
+            // 
+            // paymentAmout
+            // 
+            this.paymentAmout.AutoSize = true;
+            this.paymentAmout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paymentAmout.Location = new System.Drawing.Point(104, 538);
+            this.paymentAmout.Name = "paymentAmout";
+            this.paymentAmout.Size = new System.Drawing.Size(20, 23);
+            this.paymentAmout.TabIndex = 18;
+            this.paymentAmout.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(13, 538);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 23);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Payment:";
             // 
             // btnEdit
             // 
@@ -83,13 +107,12 @@
             this.btnEdit.TabIndex = 16;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnNext
             // 
             this.btnNext.BackgroundImage = global::Cafeteria.Properties.Resources.arrow_right;
             this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNext.Location = new System.Drawing.Point(275, 521);
+            this.btnNext.Location = new System.Drawing.Point(494, 521);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(47, 40);
             this.btnNext.TabIndex = 14;
@@ -109,24 +132,28 @@
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
+            // orderDGV
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(17, 138);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(305, 322);
-            this.dataGridView2.TabIndex = 13;
+            this.orderDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.orderDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.orderDGV.Location = new System.Drawing.Point(17, 138);
+            this.orderDGV.Name = "orderDGV";
+            this.orderDGV.RowHeadersWidth = 51;
+            this.orderDGV.RowTemplate.Height = 24;
+            this.orderDGV.Size = new System.Drawing.Size(524, 322);
+            this.orderDGV.TabIndex = 13;
+            this.orderDGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.orderDGV_CellClick);
+            this.orderDGV.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.orderDGV_CellDoubleClick);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(66, 75);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(215, 16);
+            this.label5.Size = new System.Drawing.Size(463, 16);
             this.label5.TabIndex = 7;
-            this.label5.Text = "----------------------------------------------------";
+            this.label5.Text = "---------------------------------------------------------------------------------" +
+    "---------------------------------";
             // 
             // label9
             // 
@@ -168,9 +195,10 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(66, 473);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(215, 16);
+            this.label3.Size = new System.Drawing.Size(435, 16);
             this.label3.TabIndex = 3;
-            this.label3.Text = "----------------------------------------------------";
+            this.label3.Text = "---------------------------------------------------------------------------------" +
+    "--------------------------";
             // 
             // label1
             // 
@@ -201,15 +229,17 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "Menu";
             // 
-            // dataGridView1
+            // menuDGV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 217);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(835, 583);
-            this.dataGridView1.TabIndex = 8;
+            this.menuDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.menuDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.menuDGV.Location = new System.Drawing.Point(21, 217);
+            this.menuDGV.Name = "menuDGV";
+            this.menuDGV.RowHeadersWidth = 51;
+            this.menuDGV.RowTemplate.Height = 24;
+            this.menuDGV.Size = new System.Drawing.Size(636, 583);
+            this.menuDGV.TabIndex = 8;
+            this.menuDGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.menuDGV_CellClick);
             // 
             // panel4
             // 
@@ -221,6 +251,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1293, 120);
             this.panel4.TabIndex = 12;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Cafeteria.Properties.Resources.cafe;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(1146, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(76, 75);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // label10
             // 
@@ -252,24 +293,13 @@
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(792, 181);
+            this.btnAdd.Location = new System.Drawing.Point(593, 166);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(64, 30);
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Cafeteria.Properties.Resources.cafe;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1146, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(76, 75);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // FSale
             // 
@@ -280,16 +310,16 @@
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.menuDGV);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
             this.Name = "FSale";
-            this.Text = "FSale";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.FSale_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuDGV)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -305,7 +335,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView menuDGV;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbTable;
@@ -313,10 +343,12 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView orderDGV;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Label paymentAmout;
+        private System.Windows.Forms.Label label2;
     }
 }

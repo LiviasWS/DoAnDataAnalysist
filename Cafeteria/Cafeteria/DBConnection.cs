@@ -55,5 +55,26 @@ namespace Cafeteria
                 sqlCon.Close();
             }
         }
+        public object GetScalar(string command)
+        {
+            object result = null;
+            try
+            {
+                sqlCon.Open();
+                using (var cmd = new SqlCommand(command, sqlCon))
+                {
+                    result = cmd.ExecuteScalar();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error in GetScalar: " + ex.Message);
+            }
+            finally
+            {
+                sqlCon.Close();
+            }
+            return result;
+        }
     }
 }

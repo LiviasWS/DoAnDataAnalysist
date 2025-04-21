@@ -12,7 +12,7 @@ namespace Cafeteria
 {
     public partial class FEditSP : Form
     {
-        public FEditSP()
+        public FEditSP(int maSP, String tenSP, int giaTien, int soLuong)
         {
             InitializeComponent();
         }

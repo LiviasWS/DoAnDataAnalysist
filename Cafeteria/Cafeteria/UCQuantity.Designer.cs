@@ -31,9 +31,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblTenSP = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbQuantity = new System.Windows.Forms.ComboBox();
-            this.lblPrice = new System.Windows.Forms.Label();
-            this.lblMaSP = new System.Windows.Forms.Label();
+            this.cbSoLuong = new System.Windows.Forms.ComboBox();
+            this.lbGiaTien = new System.Windows.Forms.Label();
+            this.lbMaSP = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
@@ -70,10 +70,10 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Mã sản phẩm";
             // 
-            // cbQuantity
+            // cbSoLuong
             // 
-            this.cbQuantity.FormattingEnabled = true;
-            this.cbQuantity.Items.AddRange(new object[] {
+            this.cbSoLuong.FormattingEnabled = true;
+            this.cbSoLuong.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -84,37 +84,37 @@
             "8",
             "9",
             "10"});
-            this.cbQuantity.Location = new System.Drawing.Point(251, 172);
-            this.cbQuantity.Name = "cbQuantity";
-            this.cbQuantity.Size = new System.Drawing.Size(38, 24);
-            this.cbQuantity.TabIndex = 16;
-            this.cbQuantity.Text = "1";
+            this.cbSoLuong.Location = new System.Drawing.Point(245, 182);
+            this.cbSoLuong.Name = "cbSoLuong";
+            this.cbSoLuong.Size = new System.Drawing.Size(38, 24);
+            this.cbSoLuong.TabIndex = 16;
+            this.cbSoLuong.Text = "1";
             // 
-            // lblPrice
+            // lbGiaTien
             // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(241, 138);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(64, 20);
-            this.lblPrice.TabIndex = 15;
-            this.lblPrice.Text = "hiện giá";
+            this.lbGiaTien.AutoSize = true;
+            this.lbGiaTien.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGiaTien.Location = new System.Drawing.Point(241, 145);
+            this.lbGiaTien.Name = "lbGiaTien";
+            this.lbGiaTien.Size = new System.Drawing.Size(64, 20);
+            this.lbGiaTien.TabIndex = 15;
+            this.lbGiaTien.Text = "hiện giá";
             // 
-            // lblMaSP
+            // lbMaSP
             // 
-            this.lblMaSP.AutoSize = true;
-            this.lblMaSP.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaSP.Location = new System.Drawing.Point(241, 104);
-            this.lblMaSP.Name = "lblMaSP";
-            this.lblMaSP.Size = new System.Drawing.Size(64, 20);
-            this.lblMaSP.TabIndex = 14;
-            this.lblMaSP.Text = "hiện mã";
+            this.lbMaSP.AutoSize = true;
+            this.lbMaSP.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaSP.Location = new System.Drawing.Point(241, 104);
+            this.lbMaSP.Name = "lbMaSP";
+            this.lbMaSP.Size = new System.Drawing.Size(64, 20);
+            this.lbMaSP.TabIndex = 14;
+            this.lbMaSP.Text = "hiện mã";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(82, 138);
+            this.label3.Location = new System.Drawing.Point(101, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 20);
             this.label3.TabIndex = 12;
@@ -124,7 +124,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(82, 172);
+            this.label4.Location = new System.Drawing.Point(92, 182);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 20);
             this.label4.TabIndex = 13;
@@ -136,13 +136,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbQuantity);
-            this.Controls.Add(this.lblPrice);
-            this.Controls.Add(this.lblMaSP);
+            this.Controls.Add(this.cbSoLuong);
+            this.Controls.Add(this.lbGiaTien);
+            this.Controls.Add(this.lbMaSP);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Name = "UCQuantity";
-            this.Size = new System.Drawing.Size(394, 225);
+            this.Size = new System.Drawing.Size(394, 238);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -154,9 +154,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblTenSP;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbQuantity;
-        private System.Windows.Forms.Label lblPrice;
-        private System.Windows.Forms.Label lblMaSP;
+        private System.Windows.Forms.ComboBox cbSoLuong;
+        private System.Windows.Forms.Label lbGiaTien;
+        private System.Windows.Forms.Label lbMaSP;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
     }
