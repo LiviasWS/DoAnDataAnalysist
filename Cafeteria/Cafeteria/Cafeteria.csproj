@@ -64,11 +64,13 @@
     <Compile Include="DAO\ChiTietDonHangDAO.cs" />
     <Compile Include="DAO\DonHangDAO.cs" />
     <Compile Include="DAO\HoaDonDAO.cs" />
+    <Compile Include="DAO\HoaDonDonHangDAO.cs" />
     <Compile Include="DAO\SanPhamDAO.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="DTO\ChiTietDonHang.cs" />
     <Compile Include="DTO\DonHang.cs" />
     <Compile Include="DTO\HoaDon.cs" />
+    <Compile Include="DTO\HoaDonDonHang.cs" />
     <Compile Include="DTO\SanPham.cs" />
     <Compile Include="FBill.cs">
       <SubType>Form</SubType>
@@ -82,6 +84,12 @@
     <Compile Include="FDetailSP.designer.cs">
       <DependentUpon>FDetailSP.cs</DependentUpon>
     </Compile>
+    <Compile Include="FEditOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEditOrder.Designer.cs">
+      <DependentUpon>FEditOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="FEditSP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +101,12 @@
     </Compile>
     <Compile Include="FLogin.designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOrderList.Designer.cs">
+      <DependentUpon>FOrderList.cs</DependentUpon>
     </Compile>
     <Compile Include="FSale.cs">
       <SubType>Form</SubType>
@@ -114,11 +128,17 @@
     <EmbeddedResource Include="FDetailSP.resx">
       <DependentUpon>FDetailSP.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FEditOrder.resx">
+      <DependentUpon>FEditOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FEditSP.resx">
       <DependentUpon>FEditSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOrderList.resx">
+      <DependentUpon>FOrderList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FSale.resx">
       <DependentUpon>FSale.cs</DependentUpon>

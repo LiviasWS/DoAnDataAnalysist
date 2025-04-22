@@ -38,3 +38,5 @@ C:\Users\Administrator\Source\Repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\De
 C:\Users\Administrator\Source\Repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Source\Repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.exe
 C:\Users\Administrator\Source\Repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.pdb
+C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.FOrderList.resources
+C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.FEditOrder.resources

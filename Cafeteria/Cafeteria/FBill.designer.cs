@@ -32,28 +32,28 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblTable = new System.Windows.Forms.Label();
             this.btnPrint = new System.Windows.Forms.Button();
             this.lblDate = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtNote = new System.Windows.Forms.RichTextBox();
+            this.tbNote = new System.Windows.Forms.RichTextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnCard = new System.Windows.Forms.RadioButton();
-            this.btnEwallet = new System.Windows.Forms.RadioButton();
-            this.btnCash = new System.Windows.Forms.RadioButton();
+            this.rBtnEwallet = new System.Windows.Forms.RadioButton();
+            this.rbtnCash = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
+            this.orderDetailDGV = new System.Windows.Forms.DataGridView();
+            this.rBtnCreditCard = new System.Windows.Forms.RadioButton();
+            this.btnPaymentConfirm = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.orderDetailDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -91,19 +91,18 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.lblTable);
+            this.panel3.Controls.Add(this.btnPaymentConfirm);
+            this.panel3.Controls.Add(this.orderDetailDGV);
             this.panel3.Controls.Add(this.btnPrint);
             this.panel3.Controls.Add(this.lblDate);
-            this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.txtNote);
+            this.panel3.Controls.Add(this.tbNote);
             this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.btnCard);
-            this.panel3.Controls.Add(this.btnEwallet);
-            this.panel3.Controls.Add(this.btnCash);
+            this.panel3.Controls.Add(this.rBtnCreditCard);
+            this.panel3.Controls.Add(this.rBtnEwallet);
+            this.panel3.Controls.Add(this.rbtnCash);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.lblTotal);
             this.panel3.Controls.Add(this.label5);
@@ -114,32 +113,12 @@
             this.panel3.Size = new System.Drawing.Size(657, 664);
             this.panel3.TabIndex = 3;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(155, 183);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(276, 20);
-            this.label6.TabIndex = 29;
-            this.label6.Text = "*Chỗ này là danh sách các sản phẩm nha";
-            // 
-            // lblTable
-            // 
-            this.lblTable.AutoSize = true;
-            this.lblTable.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTable.Location = new System.Drawing.Point(105, 32);
-            this.lblTable.Name = "lblTable";
-            this.lblTable.Size = new System.Drawing.Size(55, 20);
-            this.lblTable.TabIndex = 28;
-            this.lblTable.Text = "Số bàn";
-            // 
             // btnPrint
             // 
             this.btnPrint.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnPrint.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrint.ForeColor = System.Drawing.Color.White;
-            this.btnPrint.Location = new System.Drawing.Point(286, 619);
+            this.btnPrint.Location = new System.Drawing.Point(477, 619);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(78, 30);
             this.btnPrint.TabIndex = 5;
@@ -150,21 +129,11 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(501, 30);
+            this.lblDate.Location = new System.Drawing.Point(473, 30);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(85, 20);
             this.lblDate.TabIndex = 27;
             this.lblDate.Text = "18/04/2025";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(55, 32);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 20);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "Table";
             // 
             // label3
             // 
@@ -196,14 +165,14 @@
             this.label12.TabIndex = 23;
             this.label12.Text = "----------------------------------------------------------------\r\n";
             // 
-            // txtNote
+            // tbNote
             // 
-            this.txtNote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNote.Location = new System.Drawing.Point(70, 548);
-            this.txtNote.Name = "txtNote";
-            this.txtNote.Size = new System.Drawing.Size(466, 53);
-            this.txtNote.TabIndex = 17;
-            this.txtNote.Text = "";
+            this.tbNote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNote.Location = new System.Drawing.Point(70, 548);
+            this.tbNote.Name = "tbNote";
+            this.tbNote.Size = new System.Drawing.Size(466, 53);
+            this.tbNote.TabIndex = 17;
+            this.tbNote.Text = "";
             // 
             // label11
             // 
@@ -215,38 +184,29 @@
             this.label11.TabIndex = 16;
             this.label11.Text = "Note";
             // 
-            // btnCard
+            // rBtnEwallet
             // 
-            this.btnCard.AutoSize = true;
-            this.btnCard.Location = new System.Drawing.Point(87, 444);
-            this.btnCard.Name = "btnCard";
-            this.btnCard.Size = new System.Drawing.Size(93, 20);
-            this.btnCard.TabIndex = 14;
-            this.btnCard.TabStop = true;
-            this.btnCard.Text = "Credit card";
-            this.btnCard.UseVisualStyleBackColor = true;
+            this.rBtnEwallet.AutoCheck = false;
+            this.rBtnEwallet.AutoSize = true;
+            this.rBtnEwallet.Location = new System.Drawing.Point(87, 418);
+            this.rBtnEwallet.Name = "rBtnEwallet";
+            this.rBtnEwallet.Size = new System.Drawing.Size(75, 20);
+            this.rBtnEwallet.TabIndex = 13;
+            this.rBtnEwallet.TabStop = true;
+            this.rBtnEwallet.Text = "E-wallet";
+            this.rBtnEwallet.UseVisualStyleBackColor = true;
             // 
-            // btnEwallet
+            // rbtnCash
             // 
-            this.btnEwallet.AutoSize = true;
-            this.btnEwallet.Location = new System.Drawing.Point(87, 418);
-            this.btnEwallet.Name = "btnEwallet";
-            this.btnEwallet.Size = new System.Drawing.Size(75, 20);
-            this.btnEwallet.TabIndex = 13;
-            this.btnEwallet.TabStop = true;
-            this.btnEwallet.Text = "E-wallet";
-            this.btnEwallet.UseVisualStyleBackColor = true;
-            // 
-            // btnCash
-            // 
-            this.btnCash.AutoSize = true;
-            this.btnCash.Location = new System.Drawing.Point(87, 392);
-            this.btnCash.Name = "btnCash";
-            this.btnCash.Size = new System.Drawing.Size(59, 20);
-            this.btnCash.TabIndex = 12;
-            this.btnCash.TabStop = true;
-            this.btnCash.Text = "Cash";
-            this.btnCash.UseVisualStyleBackColor = true;
+            this.rbtnCash.AutoCheck = false;
+            this.rbtnCash.AutoSize = true;
+            this.rbtnCash.Location = new System.Drawing.Point(87, 392);
+            this.rbtnCash.Name = "rbtnCash";
+            this.rbtnCash.Size = new System.Drawing.Size(59, 20);
+            this.rbtnCash.TabIndex = 12;
+            this.rbtnCash.TabStop = true;
+            this.rbtnCash.Text = "Cash";
+            this.rbtnCash.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -309,6 +269,42 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // orderDetailDGV
+            // 
+            this.orderDetailDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.orderDetailDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.orderDetailDGV.Location = new System.Drawing.Point(70, 93);
+            this.orderDetailDGV.Name = "orderDetailDGV";
+            this.orderDetailDGV.RowHeadersWidth = 51;
+            this.orderDetailDGV.RowTemplate.Height = 24;
+            this.orderDetailDGV.Size = new System.Drawing.Size(516, 205);
+            this.orderDetailDGV.TabIndex = 29;
+            // 
+            // rBtnCreditCard
+            // 
+            this.rBtnCreditCard.AutoCheck = false;
+            this.rBtnCreditCard.AutoSize = true;
+            this.rBtnCreditCard.Location = new System.Drawing.Point(87, 444);
+            this.rBtnCreditCard.Name = "rBtnCreditCard";
+            this.rBtnCreditCard.Size = new System.Drawing.Size(93, 20);
+            this.rBtnCreditCard.TabIndex = 14;
+            this.rBtnCreditCard.TabStop = true;
+            this.rBtnCreditCard.Text = "Credit card";
+            this.rBtnCreditCard.UseVisualStyleBackColor = true;
+            // 
+            // btnPaymentConfirm
+            // 
+            this.btnPaymentConfirm.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnPaymentConfirm.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPaymentConfirm.ForeColor = System.Drawing.Color.White;
+            this.btnPaymentConfirm.Location = new System.Drawing.Point(70, 619);
+            this.btnPaymentConfirm.Name = "btnPaymentConfirm";
+            this.btnPaymentConfirm.Size = new System.Drawing.Size(181, 30);
+            this.btnPaymentConfirm.TabIndex = 30;
+            this.btnPaymentConfirm.Text = "Payment Confirmation";
+            this.btnPaymentConfirm.UseVisualStyleBackColor = false;
+            this.btnPaymentConfirm.Click += new System.EventHandler(this.btnPaymentConfirm_Click);
+            // 
             // FBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -326,6 +322,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.orderDetailDGV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -338,22 +335,21 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RadioButton btnCard;
-        private System.Windows.Forms.RadioButton btnEwallet;
-        private System.Windows.Forms.RadioButton btnCash;
+        private System.Windows.Forms.RadioButton rBtnEwallet;
+        private System.Windows.Forms.RadioButton rbtnCash;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox txtNote;
+        private System.Windows.Forms.RichTextBox tbNote;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnPrint;
-        private System.Windows.Forms.Label lblTable;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView orderDetailDGV;
+        private System.Windows.Forms.RadioButton rBtnCreditCard;
+        private System.Windows.Forms.Button btnPaymentConfirm;
     }
 }

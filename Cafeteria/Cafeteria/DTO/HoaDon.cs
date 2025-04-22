@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cafeteria.DTO
 {
-    class HoaDon
+    public class HoaDon
     {
         private int maHD;
         private DateTime ngayTao;

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnOrder = new System.Windows.Forms.Button();
             this.paymentAmout = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -48,6 +49,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnOrderList = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuDGV)).BeginInit();
@@ -59,6 +61,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnOrder);
             this.panel1.Controls.Add(this.paymentAmout);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnEdit);
@@ -74,6 +77,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(564, 583);
             this.panel1.TabIndex = 0;
+            // 
+            // btnOrder
+            // 
+            this.btnOrder.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnOrder.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrder.ForeColor = System.Drawing.Color.White;
+            this.btnOrder.Location = new System.Drawing.Point(367, 525);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(88, 30);
+            this.btnOrder.TabIndex = 31;
+            this.btnOrder.Text = "Order";
+            this.btnOrder.UseVisualStyleBackColor = false;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click_1);
             // 
             // paymentAmout
             // 
@@ -107,6 +123,7 @@
             this.btnEdit.TabIndex = 16;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnNext
             // 
@@ -131,6 +148,7 @@
             this.btnRemove.TabIndex = 15;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // orderDGV
             // 
@@ -140,6 +158,7 @@
             this.orderDGV.Name = "orderDGV";
             this.orderDGV.RowHeadersWidth = 51;
             this.orderDGV.RowTemplate.Height = 24;
+            this.orderDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.orderDGV.Size = new System.Drawing.Size(524, 322);
             this.orderDGV.TabIndex = 13;
             this.orderDGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.orderDGV_CellClick);
@@ -188,7 +207,7 @@
             this.cbTable.Name = "cbTable";
             this.cbTable.Size = new System.Drawing.Size(72, 24);
             this.cbTable.TabIndex = 5;
-            this.cbTable.Text = "Select";
+            this.cbTable.Text = "1";
             // 
             // label3
             // 
@@ -301,12 +320,27 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnOrderList
+            // 
+            this.btnOrderList.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnOrderList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOrderList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrderList.ForeColor = System.Drawing.Color.White;
+            this.btnOrderList.Location = new System.Drawing.Point(1191, 170);
+            this.btnOrderList.Name = "btnOrderList";
+            this.btnOrderList.Size = new System.Drawing.Size(64, 30);
+            this.btnOrderList.TabIndex = 15;
+            this.btnOrderList.Text = "Orders";
+            this.btnOrderList.UseVisualStyleBackColor = false;
+            this.btnOrderList.Click += new System.EventHandler(this.btnOrder_Click);
+            // 
             // FSale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1293, 848);
+            this.Controls.Add(this.btnOrderList);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.btnAdd);
@@ -350,5 +384,7 @@
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Label paymentAmout;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnOrderList;
+        private System.Windows.Forms.Button btnOrder;
     }
 }

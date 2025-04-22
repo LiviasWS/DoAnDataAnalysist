@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnEdit = new System.Windows.Forms.Button();
-            this.ucQuantity1 = new Cafeteria.UCQuantity();
+            this.ucSp = new Cafeteria.UCQuantity();
             this.SuspendLayout();
             // 
             // btnEdit
@@ -40,13 +40,14 @@
             this.btnEdit.TabIndex = 17;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // ucQuantity1
+            // ucSp
             // 
-            this.ucQuantity1.Location = new System.Drawing.Point(-1, -1);
-            this.ucQuantity1.Name = "ucQuantity1";
-            this.ucQuantity1.Size = new System.Drawing.Size(394, 225);
-            this.ucQuantity1.TabIndex = 18;
+            this.ucSp.Location = new System.Drawing.Point(-1, -1);
+            this.ucSp.Name = "ucSp";
+            this.ucSp.Size = new System.Drawing.Size(394, 225);
+            this.ucSp.TabIndex = 18;
             // 
             // FEditSP
             // 
@@ -54,7 +55,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(393, 279);
-            this.Controls.Add(this.ucQuantity1);
+            this.Controls.Add(this.ucSp);
             this.Controls.Add(this.btnEdit);
             this.Name = "FEditSP";
             this.Text = "FEditSP";
@@ -65,6 +66,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnEdit;
-        private UCQuantity ucQuantity1;
+        private UCQuantity ucSp;
     }
 }

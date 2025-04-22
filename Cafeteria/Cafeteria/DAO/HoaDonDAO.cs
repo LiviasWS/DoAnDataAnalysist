@@ -1,6 +1,7 @@
 ﻿using Cafeteria.DTO;
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,5 +11,22 @@ namespace Cafeteria.DAO
     class HoaDonDAO
     {
         DBConnection dBConn = new DBConnection();
+        public void add(HoaDon item)
+        {
+            string time = item.NgayTao.ToString("yyyy-MM-dd HH:mm:ss");
+            string query = string.Format("insert into HoaDon(ngayTao,idNguoitao, phuongThuc, ghiChu, tongHD) values ('{0}','{1}','{2}','{3}','{4}')", time, item.IdNguoiTao, item.PhuongThuc, item.GhiChu, item.TongHD);
+            dBConn.Execute(query);
+        }
+        public int getMaxId()
+        {
+            string query = string.Format("SELECT max(maHD) from HoaDon");
+            object ob = dBConn.GetScalar(query);
+            return int.Parse(ob.ToString());
+        }
+        public void UpdateNote(HoaDon item)
+        {
+            string query = string.Format("update HoaDon set ghiChu = '{0}' where maHD='{1}'",item.GhiChu, item.MaHD);
+            dBConn.Execute(query);
+        }
     }
 }

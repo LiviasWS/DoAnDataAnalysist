@@ -52,17 +52,7 @@ namespace Cafeteria
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            DonHang donHang = new DonHang(int.Parse(cbTable.Text),DateTime.Now,1,"");
-            donHangDAO.add(donHang);
-            int maDonHang = donHangDAO.getMaxId();
-            foreach (DataRow r in orderTable.Rows)
-            {
-                ChiTietDonHang chiTietDonHang = new ChiTietDonHang(maDonHang, int.Parse(r[0].ToString()), int.Parse(r[2].ToString()));
-                chiTietDonHangDAO.add(chiTietDonHang);
-            }
-            FBill formBill = new FBill();
-            formBill.Show();
-            this.Hide();
+            
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -70,11 +60,6 @@ namespace Cafeteria
             FDetailSP formSP = new FDetailSP();
             formSP.Show();
         }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-        }
-
         private void menuDGV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
@@ -118,17 +103,72 @@ namespace Cafeteria
 
         private void orderDGV_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex < 0) return;
+            if (orderDGV.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn một dòng để sửa.");
+                return;
+            }
 
-            var row = orderDGV.Rows[e.RowIndex];
+            DataGridViewRow selectedRow = orderDGV.SelectedRows[0];
+            DataRowView drv = selectedRow.DataBoundItem as DataRowView;
+            if (drv == null) return;
 
-            // Đọc từng giá trị từ các cột (tên cột trùng với DataTable.Columns)
-            int maSP = Convert.ToInt32(row.Cells["maSP"].Value);
-            string tenSP = row.Cells["tenSP"].Value.ToString();
-            int giaTien = Convert.ToInt32(row.Cells["giaTien"].Value);
-            int soLuong = Convert.ToInt32(row.Cells["soLuong"].Value);
-            var detailsForm = new FEditSP(maSP, tenSP, giaTien, soLuong);
-            detailsForm.Show();
+            DataRow dataRow = drv.Row;
+
+            FEditSP fEditSP = new FEditSP(dataRow);
+            fEditSP.StartPosition = FormStartPosition.CenterParent;
+            fEditSP.ShowDialog();
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            FOrderList list = new FOrderList();
+            list.Show();
+            list.StartPosition = FormStartPosition.CenterScreen;
+            this.Hide();
+        }
+
+        private void btnOrder_Click_1(object sender, EventArgs e)
+        {
+            DonHang donHang = new DonHang(int.Parse(cbTable.Text), DateTime.Now, 1, "", "Chua Thanh Toan");
+            donHangDAO.add(donHang);
+            int maDonHang = donHangDAO.getMaxId();
+            foreach (DataRow r in orderTable.Rows)
+            {
+                ChiTietDonHang chiTietDonHang = new ChiTietDonHang(maDonHang, int.Parse(r[0].ToString()), int.Parse(r[3].ToString()));
+                chiTietDonHangDAO.add(chiTietDonHang);
+            }
+            orderTable.Clear();
+            MessageBox.Show("Order Success !");
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (orderDGV.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn một dòng để sửa.");
+                return;
+            }
+
+            DataGridViewRow selectedRow = orderDGV.SelectedRows[0];
+            DataRowView drv = selectedRow.DataBoundItem as DataRowView;
+            if (drv == null) return;
+
+            DataRow dataRow = drv.Row;
+
+            FEditSP fEditSP = new FEditSP(dataRow);
+            fEditSP.StartPosition = FormStartPosition.CenterParent;
+            fEditSP.ShowDialog();
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            if (orderDGV.CurrentRow == null) return;
+
+            var drv = orderDGV.CurrentRow.DataBoundItem as DataRowView;
+            if (drv == null) return;
+            drv.Row.Delete();
+            bsOrder.EndEdit();
         }
     }
 }
