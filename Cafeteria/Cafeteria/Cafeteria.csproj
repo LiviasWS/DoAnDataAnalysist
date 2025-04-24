@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -61,17 +61,84 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\HoaDonDAO.cs" />
+    <Compile Include="DAO\SanPhamDAO.cs" />
     <Compile Include="DBConnection.cs" />
+    <Compile Include="DTO\HoaDon.cs" />
+    <Compile Include="DTO\SanPham.cs" />
+    <Compile Include="FGeneralInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGeneralInformation.Designer.cs">
+      <DependentUpon>FGeneralInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FProductManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProductManage.designer.cs">
+      <DependentUpon>FProductManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSaleDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSaleDashboard.designer.cs">
+      <DependentUpon>FSaleDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCFilterItemCheckBoxList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCFilterItemCheckBoxList.designer.cs">
+      <DependentUpon>UCFilterItemCheckBoxList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCFilterItemTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCFilterItemTextBox.designer.cs">
+      <DependentUpon>UCFilterItemTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCGeneralInformationItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCGeneralInformationItem.Designer.cs">
+      <DependentUpon>UCGeneralInformationItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCInvoiceItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCInvoiceItem.Designer.cs">
+      <DependentUpon>UCInvoiceItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCListHeaderSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCListHeaderSanPham.Designer.cs">
+      <DependentUpon>UCListHeaderSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCListItemSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCListItemSanPham.Designer.cs">
+      <DependentUpon>UCListItemSanPham.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FGeneralInformation.resx">
+      <DependentUpon>FGeneralInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProductManage.resx">
+      <DependentUpon>FProductManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSaleDashboard.resx">
+      <DependentUpon>FSaleDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,6 +149,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UCFilterItemCheckBoxList.resx">
+      <DependentUpon>UCFilterItemCheckBoxList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCFilterItemTextBox.resx">
+      <DependentUpon>UCFilterItemTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCGeneralInformationItem.resx">
+      <DependentUpon>UCGeneralInformationItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCInvoiceItem.resx">
+      <DependentUpon>UCInvoiceItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCListHeaderSanPham.resx">
+      <DependentUpon>UCListHeaderSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCListItemSanPham.resx">
+      <DependentUpon>UCListItemSanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
