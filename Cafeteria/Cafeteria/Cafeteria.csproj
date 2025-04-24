@@ -118,11 +118,23 @@
     <Compile Include="FOrderList.Designer.cs">
       <DependentUpon>FOrderList.cs</DependentUpon>
     </Compile>
+    <Compile Include="FProductManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProductManage.designer.cs">
+      <DependentUpon>FProductManage.cs</DependentUpon>
+    </Compile>
     <Compile Include="FSale.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FSale.designer.cs">
       <DependentUpon>FSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSaleDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSaleDashboard.designer.cs">
+      <DependentUpon>FSaleDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -191,12 +203,6 @@
     </Compile>
     <EmbeddedResource Include="FGeneralInformation.resx">
       <DependentUpon>FGeneralInformation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FProductManage.resx">
-      <DependentUpon>FProductManage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FSaleDashboard.resx">
-      <DependentUpon>FSaleDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -16,7 +16,7 @@ namespace Cafeteria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FSale());
+            Application.Run(new FSaleDashboard());
         }
     }
 }
