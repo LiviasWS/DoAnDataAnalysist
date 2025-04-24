@@ -6,12 +6,19 @@ using System.Threading.Tasks;
 
 namespace Cafeteria.DTO
 {
+    public class SanPham
     class SanPham
     {
-        private int maSP;
-        private String tenSP;
-        private int giaTien;
-        private String loaiSP;
+        public int maSP { get; set; }
+        public string tenSP { get; set; }
+        public int giaTien { get; set; }
+        public string loaiSP { get; set; }
+
+
+        public SanPham()
+        {
+
+        }
 
         public SanPham(int maSP, string tenSP, int giaTien, string loaiSP)
         {
@@ -20,6 +27,8 @@ namespace Cafeteria.DTO
             this.giaTien = giaTien;
             this.loaiSP = loaiSP;
         }
+
+
 
         public int MaSP { get => maSP; set => maSP = value; }
         public string TenSP { get => tenSP; set => tenSP = value; }

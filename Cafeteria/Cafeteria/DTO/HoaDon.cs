@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,13 +9,16 @@ namespace Cafeteria.DTO
 {
     public class HoaDon
     {
-        private int maHD;
-        private DateTime ngayTao;
-        private int idNguoiTao;
-        private String phuongThuc;
-        private String ghiChu;
-        private double tongHD;
+        public int maHD { get; set; }
+        public DateTime ngayTao { get; set; }
+        public int idNguoiTao { get; set; }
+        public string phuongThuc { get; set; }
+        public string ghiChu { get; set; }
+        public int tongHD { get; set; }
 
+
+
+        public HoaDon()
         public HoaDon(int maHD, DateTime ngayTao, int idNguoiTao, string phuongThuc, string ghiChu, double tongHD)
         {
             this.maHD = maHD;
@@ -26,6 +30,7 @@ namespace Cafeteria.DTO
         }
         public HoaDon(DateTime ngayTao, int idNguoiTao, string phuongThuc, string ghiChu, double tongHD)
         {
+
             this.ngayTao = ngayTao;
             this.idNguoiTao = idNguoiTao;
             this.phuongThuc = phuongThuc;
