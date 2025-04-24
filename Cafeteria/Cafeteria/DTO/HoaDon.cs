@@ -16,10 +16,9 @@ namespace Cafeteria.DTO
         public string ghiChu { get; set; }
         public int tongHD { get; set; }
 
+        public HoaDon() { }
 
-
-        public HoaDon()
-        public HoaDon(int maHD, DateTime ngayTao, int idNguoiTao, string phuongThuc, string ghiChu, double tongHD)
+        public HoaDon(int maHD, DateTime ngayTao, int idNguoiTao, string phuongThuc, string ghiChu, int tongHD)
         {
             this.maHD = maHD;
             this.ngayTao = ngayTao;
@@ -28,7 +27,7 @@ namespace Cafeteria.DTO
             this.ghiChu = ghiChu;
             this.tongHD = tongHD;
         }
-        public HoaDon(DateTime ngayTao, int idNguoiTao, string phuongThuc, string ghiChu, double tongHD)
+        public HoaDon(DateTime ngayTao, int idNguoiTao, string phuongThuc, string ghiChu, int tongHD)
         {
 
             this.ngayTao = ngayTao;
@@ -43,6 +42,6 @@ namespace Cafeteria.DTO
         public int IdNguoiTao { get => idNguoiTao; set => idNguoiTao = value; }
         public string PhuongThuc { get => phuongThuc; set => phuongThuc = value; }
         public string GhiChu { get => ghiChu; set => ghiChu = value; }
-        public double TongHD { get => tongHD; set => tongHD = value; }
+        public int TongHD { get => tongHD; set => tongHD = value; }
     }
 }

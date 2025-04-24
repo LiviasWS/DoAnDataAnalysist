@@ -11,11 +11,10 @@ namespace Cafeteria.DAO
     public class SanPhamDAO
     {
         DBConnection conn = new DBConnection();
+        DBConnection dBConn = new DBConnection();
         public SanPhamDAO() { }
 
         public List<string> getAllLoaiSP()
-        DBConnection dBConn = new DBConnection();
-        public DataTable getMenu(string key="")
         {
             List<string> result = new List<string>();
             string sqlCommand = "SELECT DISTINCT LOAISP FROM SANPHAM";
@@ -23,14 +22,11 @@ namespace Cafeteria.DAO
             foreach (DataRow row in dataTable.Rows)
             {
                 result.Add(row["loaiSP"].ToString());
-            }    
+            }
             return result;
-            string query = String.Format("select * from SanPham where tenSP like '%{0}%'", key);
-            DataTable dt = dBConn.Load(query);
-            return dt;
         }
 
-        public List<SanPham> getAllSanPham() 
+        public List<SanPham> getAllSanPham()
         {
             List<SanPham> sanPhams = new List<SanPham>();
             string sqlCommand = "SELECT * FROM SANPHAM";
@@ -38,7 +34,7 @@ namespace Cafeteria.DAO
             foreach (DataRow row in dataTable.Rows)
             {
                 SanPham sanpham = new SanPham();
-                sanpham.maSP = Convert.ToInt32(row["maSP"]); 
+                sanpham.maSP = Convert.ToInt32(row["maSP"]);
                 sanpham.tenSP = row["tenSP"].ToString();
                 sanpham.giaTien = Convert.ToInt32(row["giaTien"]);
                 sanpham.loaiSP = row["loaiSP"].ToString();
@@ -61,6 +57,13 @@ namespace Cafeteria.DAO
             }
             return sanPham;
         }
+        public DataTable getMenu(string key = "")
+        {
+            string query = String.Format("select * from SanPham where tenSP like '%{0}%'", key);
+            DataTable dt = dBConn.Load(query);
+            return dt;
+        }
+
 
     }
 }

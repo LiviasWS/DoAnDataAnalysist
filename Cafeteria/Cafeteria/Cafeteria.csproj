@@ -77,7 +77,6 @@
     <Compile Include="FGeneralInformation.Designer.cs">
       <DependentUpon>FGeneralInformation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
     <Compile Include="DTO\ChiTietDonHang.cs" />
     <Compile Include="DTO\DonHang.cs" />
     <Compile Include="DTO\HoaDon.cs" />
@@ -153,6 +152,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FSale.resx">
       <DependentUpon>FSale.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="UCFilterItemCheckBoxList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -191,9 +191,6 @@
     </Compile>
     <EmbeddedResource Include="FGeneralInformation.resx">
       <DependentUpon>FGeneralInformation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FProductManage.resx">
       <DependentUpon>FProductManage.cs</DependentUpon>

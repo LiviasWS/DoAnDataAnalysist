@@ -59,3 +59,12 @@ C:\Users\Anya\Source\Repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafet
 C:\Users\Anya\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.FGeneralInformation.resources
 C:\Users\Anya\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.UCGeneralInformationItem.resources
 C:\Users\Anya\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.UCInvoiceItem.resources
+C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.FGeneralInformation.resources
+C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.FProductManage.resources
+C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.FSaleDashboard.resources
+C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.UCFilterItemCheckBoxList.resources
+C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.UCFilterItemTextBox.resources
+C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.UCGeneralInformationItem.resources
+C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.UCInvoiceItem.resources
+C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.UCListHeaderSanPham.resources
+C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.UCListItemSanPham.resources

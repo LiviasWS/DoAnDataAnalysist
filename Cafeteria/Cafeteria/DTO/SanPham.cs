@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace Cafeteria.DTO
 {
     public class SanPham
-    class SanPham
     {
         public int maSP { get; set; }
         public string tenSP { get; set; }
