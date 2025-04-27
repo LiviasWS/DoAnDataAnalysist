@@ -30,9 +30,7 @@
         {
             this.dGVNLTrongKho = new System.Windows.Forms.DataGridView();
             this.dGVYCNhapHang = new System.Windows.Forms.DataGridView();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSend = new System.Windows.Forms.Button();
-            this.txtTenNL = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.cbbQC = new System.Windows.Forms.ComboBox();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -55,6 +53,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.cbbTenNL = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dGVNLTrongKho)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dGVYCNhapHang)).BeginInit();
             this.panel2.SuspendLayout();
@@ -80,13 +80,6 @@
             this.dGVYCNhapHang.TabIndex = 1;
             this.dGVYCNhapHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVYCNhapHang_CellClick);
             // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(33, 99);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(256, 20);
-            this.txtSearch.TabIndex = 2;
-            // 
             // btnSend
             // 
             this.btnSend.Location = new System.Drawing.Point(751, 559);
@@ -96,13 +89,6 @@
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
-            // 
-            // txtTenNL
-            // 
-            this.txtTenNL.Location = new System.Drawing.Point(205, 49);
-            this.txtTenNL.Name = "txtTenNL";
-            this.txtTenNL.Size = new System.Drawing.Size(123, 20);
-            this.txtTenNL.TabIndex = 4;
             // 
             // txtSoLuong
             // 
@@ -164,6 +150,7 @@
             this.btnList.TabIndex = 10;
             this.btnList.Text = "List";
             this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // panel2
             // 
@@ -211,6 +198,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.cbbTenNL);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.txtGhiChu);
             this.panel1.Controls.Add(this.label10);
@@ -226,7 +214,6 @@
             this.panel1.Controls.Add(this.dGVYCNhapHang);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.cbbQC);
-            this.panel1.Controls.Add(this.txtTenNL);
             this.panel1.Controls.Add(this.txtSoLuong);
             this.panel1.Location = new System.Drawing.Point(393, 125);
             this.panel1.Name = "panel1";
@@ -337,19 +324,35 @@
             this.label9.TabIndex = 13;
             this.label9.Text = "Search";
             // 
-            // FYeuCauNhapHang
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(33, 100);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(100, 20);
+            this.txtSearch.TabIndex = 14;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // cbbTenNL
+            // 
+            this.cbbTenNL.FormattingEnabled = true;
+            this.cbbTenNL.Location = new System.Drawing.Point(206, 51);
+            this.cbbTenNL.Name = "cbbTenNL";
+            this.cbbTenNL.Size = new System.Drawing.Size(121, 21);
+            this.cbbTenNL.TabIndex = 17;
+            // 
+            // FYeuCauDatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 600);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnList);
-            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.dGVNLTrongKho);
-            this.Name = "FYeuCauNhapHang";
+            this.Name = "FYeuCauDatHang";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.dGVNLTrongKho)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dGVYCNhapHang)).EndInit();
@@ -367,9 +370,7 @@
 
         private System.Windows.Forms.DataGridView dGVNLTrongKho;
         private System.Windows.Forms.DataGridView dGVYCNhapHang;
-        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSend;
-        private System.Windows.Forms.TextBox txtTenNL;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.ComboBox cbbQC;
         private System.Windows.Forms.Button btnAdd;
@@ -392,5 +393,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtGhiChu;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.ComboBox cbbTenNL;
     }
 }

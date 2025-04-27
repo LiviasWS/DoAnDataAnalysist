@@ -41,6 +41,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cbbTenNL = new System.Windows.Forms.ComboBox();
+            this.btnSend = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtGhiChu = new System.Windows.Forms.TextBox();
@@ -55,9 +58,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnSend = new System.Windows.Forms.Button();
-            this.cbbTenNL = new System.Windows.Forms.ComboBox();
+            this.btnList = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dGVDonNhapHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dGVDSNhapKho)).BeginInit();
             this.panel1.SuspendLayout();
@@ -207,6 +208,34 @@
             this.panel3.Size = new System.Drawing.Size(517, 563);
             this.panel3.TabIndex = 13;
             // 
+            // cbbTenNL
+            // 
+            this.cbbTenNL.FormattingEnabled = true;
+            this.cbbTenNL.Location = new System.Drawing.Point(192, 85);
+            this.cbbTenNL.Name = "cbbTenNL";
+            this.cbbTenNL.Size = new System.Drawing.Size(121, 21);
+            this.cbbTenNL.TabIndex = 14;
+            // 
+            // btnSend
+            // 
+            this.btnSend.Location = new System.Drawing.Point(441, 539);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(75, 23);
+            this.btnSend.TabIndex = 23;
+            this.btnSend.Text = "Send";
+            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(81, 221);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 22;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -332,33 +361,15 @@
             this.label3.Text = "---------------------------------------------------------------------------------" +
     "--------------------------\r\n";
             // 
-            // btnAdd
+            // btnList
             // 
-            this.btnAdd.Location = new System.Drawing.Point(81, 221);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 22;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnSend
-            // 
-            this.btnSend.Location = new System.Drawing.Point(441, 539);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(75, 23);
-            this.btnSend.TabIndex = 23;
-            this.btnSend.Text = "Send";
-            this.btnSend.UseVisualStyleBackColor = true;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
-            // 
-            // cbbTenNL
-            // 
-            this.cbbTenNL.FormattingEnabled = true;
-            this.cbbTenNL.Location = new System.Drawing.Point(192, 85);
-            this.cbbTenNL.Name = "cbbTenNL";
-            this.cbbTenNL.Size = new System.Drawing.Size(121, 21);
-            this.cbbTenNL.TabIndex = 14;
+            this.btnList.Location = new System.Drawing.Point(12, 677);
+            this.btnList.Name = "btnList";
+            this.btnList.Size = new System.Drawing.Size(75, 23);
+            this.btnList.TabIndex = 14;
+            this.btnList.Text = "List";
+            this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // FNhapKho
             // 
@@ -366,6 +377,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
             this.ClientSize = new System.Drawing.Size(841, 712);
+            this.Controls.Add(this.btnList);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -416,5 +428,6 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.ComboBox cbbTenNL;
+        private System.Windows.Forms.Button btnList;
     }
 }

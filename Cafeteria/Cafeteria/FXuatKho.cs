@@ -21,6 +21,7 @@ namespace Cafeteria
         List<DSXuatKho> dSXuatKhos = new List<DSXuatKho>();
         DSXuatKhoDAO dSXuatKhoDAO = new DSXuatKhoDAO();
         DonXuatKhoDAO donXuatKhoDAO = new DonXuatKhoDAO();
+        DataTable dtsearch = new DataTable();
         public FXuatKho()
         {
             InitializeComponent();
@@ -31,6 +32,7 @@ namespace Cafeteria
         private void Form_Load()
         {
             DataTable dt = nLTrongKhoDAO.GetAllNLTrongKho();
+            dtsearch = dt;
             dGVNLTrongKho.DataSource = dt;
         }
         private void Load_Combobox()
@@ -40,6 +42,12 @@ namespace Cafeteria
             {
                 string tenQC = item["TenQC"].ToString();
                 cbbQuyCach.Items.Add(tenQC);
+            }
+            dt = nguyenLieuDAO.GetAllNguyenLieu();
+            foreach (DataRow item in dt.Rows)
+            {
+                string tenNL = item["TenNL"].ToString();
+                comboBox1.Items.Add(tenNL);
             }
         }
         private void Load_DSXuatKho()
@@ -58,22 +66,28 @@ namespace Cafeteria
         {
             if (e.RowIndex == -1) return;
             int t = dGVNLTrongKho.CurrentCell.RowIndex;
-            txtTenNL.Text = dGVNLTrongKho.Rows[t].Cells[0].Value.ToString();
+            comboBox1.Text = dGVNLTrongKho.Rows[t].Cells[0].Value.ToString();
             cbbQuyCach.Text = dGVNLTrongKho.Rows[t].Cells[2].Value.ToString();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string tenNL = txtTenNL.Text;
+            string tenNL = comboBox1.Text;
             string soLuong = txtSoLuong.Text;
             string tenQC = cbbQuyCach.Text;
             if (Check(tenNL, soLuong, tenQC) == false) return;
             NguyenLieu nguyenLieu = nguyenLieuDAO.FindByName(tenNL);
             QuyCach quyCach = quyCachDAO.FindByName(tenQC);
             DSXuatKho dSXuatKho = dSXuatKhos.FirstOrDefault(x => x.NguyenLieu.TenNL == tenNL && x.QuyCach.TenQC == tenQC);
+            NLTrongKho nLTrongKho = nLTrongKhoDAO.FindNLTrongKho(nguyenLieu, quyCach);
             if (dSXuatKho != null)
             {
                 dSXuatKho.SoLuong += int.Parse(soLuong);
+                if (nLTrongKho.SoLuong < dSXuatKho.SoLuong)
+                {
+                    MessageBox.Show("So luong trong kho khong du");
+                    return;
+                }
             }
             else
             {
@@ -81,20 +95,33 @@ namespace Cafeteria
                 dSXuatKho.NguyenLieu = nguyenLieu;
                 dSXuatKho.QuyCach = quyCach;
                 dSXuatKho.SoLuong = int.Parse(soLuong);
+                if (nLTrongKho.SoLuong < dSXuatKho.SoLuong)
+                {
+                    MessageBox.Show("So luong trong kho khong du");
+                    return;
+                }
                 dSXuatKhos.Add(dSXuatKho);
             }
             Load_DSXuatKho();
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            string tenNL = txtTenNL.Text;
+            string tenNL = comboBox1.Text;
             string soLuong = txtSoLuong.Text;
             string tenQC = cbbQuyCach.Text;
             if (Check(tenNL, soLuong, tenQC) == false) return;
             DSXuatKho dSXuatKho = dSXuatKhos.FirstOrDefault(x => x.NguyenLieu.TenNL == tenNL && x.QuyCach.TenQC == tenQC);
+            NguyenLieu nguyenLieu = nguyenLieuDAO.FindByName(tenNL);
+            QuyCach quyCach = quyCachDAO.FindByName(tenQC);
+            NLTrongKho nLTrongKho = nLTrongKhoDAO.FindNLTrongKho(nguyenLieu, quyCach);
             if (dSXuatKho != null)
             {
                 dSXuatKho.SoLuong = int.Parse(soLuong);
+                if(nLTrongKho.SoLuong < dSXuatKho.SoLuong)
+                {
+                    MessageBox.Show("So luong trong kho khong du");
+                    return;
+                }
             }
             else
             {
@@ -106,7 +133,7 @@ namespace Cafeteria
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            string tenNL = txtTenNL.Text;
+            string tenNL = comboBox1.Text;
             string soLuong = txtSoLuong.Text;
             string tenQC = cbbQuyCach.Text;
             if (Check(tenNL, soLuong, tenQC) == false) return;
@@ -157,12 +184,24 @@ namespace Cafeteria
             {
                 item.DonXuatKho = donXuatKho;
                 dSXuatKhoDAO.AddDSXuatKho(item);
-                NLTrongKho nLTrongKho = nLTrongKhoDAO.FindNLTrongKho(item.NguyenLieu, item.QuyCach);
-                nLTrongKho.SoLuong -= item.SoLuong;
-                nLTrongKhoDAO.EditNLTrongKho(nLTrongKho);
             }
-            MessageBox.Show("Xuat kho thanh cong");
-            Form_Load();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = txtSearch.Text.Trim().ToLower();
+            var filtered = dtsearch.AsEnumerable()
+                .Where(row => row.Field<string>("TenNL").ToLower().Contains(keyword));
+            if (filtered.Any())
+                dGVNLTrongKho.DataSource = filtered.CopyToDataTable();
+            else
+                dGVNLTrongKho.DataSource = null;
+        }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            FDanhSachDon fDanhSachDon = new FDanhSachDon();
+            fDanhSachDon.ShowDialog();
         }
     }
 }

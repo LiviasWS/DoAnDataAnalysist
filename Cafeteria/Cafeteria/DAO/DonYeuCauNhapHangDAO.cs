@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace Cafeteria.DAO
 {
-    internal class DonYeuCauDatHangDAO
+    internal class DonYeuCauNhapHangDAO
     {
         DBConnection db = new DBConnection();
-        public void AddDonYeuCauDatHang(DonYeuCauDatHang donYeuCau)
+        public void AddDonYeuCauDatHang(DonYeuCauNhapHang donYeuCau)
         {
             string query = string.Format("INSERT INTO DonYeuCauNhapHang (NgayTao, NguoiTao, GhiChu, NgayDuKienHetHang) " +
                 "VALUES ('{0}', {1}, N'{2}', '{3}')",donYeuCau.NgayTao, donYeuCau.IdNguoiTao, donYeuCau.GhiChu,donYeuCau.NgayDuKienHetHang);
             db.Execute(query);
         }
-        public int AddDonYeuCauDatHangGetId(DonYeuCauDatHang donYeuCau)
+        public int AddDonYeuCauDatHangGetId(DonYeuCauNhapHang donYeuCau)
         {
             string query = string.Format("INSERT INTO DonYeuCauNhapHang (NgayTao, NguoiTao, GhiChu, NgayDuKienHetHang) " +
                "VALUES ('{0}', 2, N'{1}', '{2}') select SCOPE_IDENTITY()",

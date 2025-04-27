@@ -30,7 +30,6 @@
         {
             this.dGVNLTrongKho = new System.Windows.Forms.DataGridView();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.txtTenNL = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.cbbQuyCach = new System.Windows.Forms.ComboBox();
             this.txtGhiChu = new System.Windows.Forms.TextBox();
@@ -54,6 +53,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnSend = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnList = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dGVNLTrongKho)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dGVDSXuatKho)).BeginInit();
             this.panel2.SuspendLayout();
@@ -77,13 +78,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(123, 20);
             this.txtSearch.TabIndex = 1;
-            // 
-            // txtTenNL
-            // 
-            this.txtTenNL.Location = new System.Drawing.Point(103, 75);
-            this.txtTenNL.Name = "txtTenNL";
-            this.txtTenNL.Size = new System.Drawing.Size(100, 20);
-            this.txtTenNL.TabIndex = 2;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // txtSoLuong
             // 
@@ -204,6 +199,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Controls.Add(this.btnRemove);
             this.panel3.Controls.Add(this.btnEdit);
             this.panel3.Controls.Add(this.btnAdd);
@@ -215,7 +211,6 @@
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.dGVDSXuatKho);
             this.panel3.Controls.Add(this.txtGhiChu);
-            this.panel3.Controls.Add(this.txtTenNL);
             this.panel3.Controls.Add(this.txtSoLuong);
             this.panel3.Controls.Add(this.cbbQuyCach);
             this.panel3.Location = new System.Drawing.Point(383, 130);
@@ -319,12 +314,31 @@
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(103, 81);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 14;
+            // 
+            // btnList
+            // 
+            this.btnList.Location = new System.Drawing.Point(0, 669);
+            this.btnList.Name = "btnList";
+            this.btnList.Size = new System.Drawing.Size(75, 23);
+            this.btnList.TabIndex = 5;
+            this.btnList.Text = "List";
+            this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
+            // 
             // FXuatKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
-            this.ClientSize = new System.Drawing.Size(835, 675);
+            this.ClientSize = new System.Drawing.Size(835, 688);
+            this.Controls.Add(this.btnList);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -348,7 +362,6 @@
 
         private System.Windows.Forms.DataGridView dGVNLTrongKho;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.TextBox txtTenNL;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.ComboBox cbbQuyCach;
         private System.Windows.Forms.TextBox txtGhiChu;
@@ -372,5 +385,7 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnList;
     }
 }

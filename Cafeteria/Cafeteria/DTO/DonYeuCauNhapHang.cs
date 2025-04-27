@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cafeteria
 {
-    public class DonYeuCauDatHang
+    public class DonYeuCauNhapHang
     {
         private int maDonYeuCau;
         private DateTime ngayTao;
@@ -18,7 +18,7 @@ namespace Cafeteria
         public int IdNguoiTao { get => idNguoiTao; set => idNguoiTao = value; }
         public string GhiChu { get => ghiChu; set => ghiChu = value; }
         public DateTime NgayDuKienHetHang { get => ngayDuKienHetHang; set => ngayDuKienHetHang = value; }
-        public DonYeuCauDatHang(int maDonYeuCau, DateTime ngayTao, int idNguoiTao, string ghiChu, DateTime ngayDuKienHetHang)
+        public DonYeuCauNhapHang(int maDonYeuCau, DateTime ngayTao, int idNguoiTao, string ghiChu, DateTime ngayDuKienHetHang)
         {
             this.maDonYeuCau = maDonYeuCau;
             this.ngayTao = ngayTao;
@@ -26,13 +26,13 @@ namespace Cafeteria
             this.ghiChu = ghiChu;
             this.ngayDuKienHetHang = ngayDuKienHetHang;
         }
-        public DonYeuCauDatHang(DateTime ngayTao, int idNguoiTao, string ghiChu, DateTime ngayDuKienHetHang)
+        public DonYeuCauNhapHang(DateTime ngayTao, int idNguoiTao, string ghiChu, DateTime ngayDuKienHetHang)
         {
             this.ngayTao = ngayTao;
             this.idNguoiTao = idNguoiTao;
             this.ghiChu = ghiChu;
             this.ngayDuKienHetHang = ngayDuKienHetHang;
         }
-        public DonYeuCauDatHang() { }
+        public DonYeuCauNhapHang() { }
     }
 }

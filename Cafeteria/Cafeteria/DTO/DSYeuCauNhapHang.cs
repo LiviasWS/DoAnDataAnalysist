@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace Cafeteria
 {
-    public class DSYeuCauDatHang
+    public class DSYeuCauNhapHang
     {
-        DonYeuCauDatHang donYeuCauDatHang;
+        DonYeuCauNhapHang donYeuCauDatHang;
         NguyenLieu nguyenLieu;
         int soLuong;
         QuyCach quyCach;
-        public DSYeuCauDatHang(DonYeuCauDatHang donYeuCauDatHang,NguyenLieu nguyenLieu, int soLuong, QuyCach quyCach)
+        public DSYeuCauNhapHang(DonYeuCauNhapHang donYeuCauDatHang,NguyenLieu nguyenLieu, int soLuong, QuyCach quyCach)
         {
             this.donYeuCauDatHang = donYeuCauDatHang;
             this.nguyenLieu = nguyenLieu;
             this.soLuong = soLuong;
             this.quyCach = quyCach;
         }
-        public DSYeuCauDatHang() { }
+        public DSYeuCauNhapHang() { }
         public NguyenLieu NguyenLieu { get => nguyenLieu; set => nguyenLieu = value; }
         public int SoLuong { get => soLuong; set => soLuong = value; }
         public QuyCach QuyCach { get => quyCach; set => quyCach = value; }
-        public DonYeuCauDatHang DonYeuCauDatHang { get => donYeuCauDatHang; set => donYeuCauDatHang = value; }
+        public DonYeuCauNhapHang DonYeuCauDatHang { get => donYeuCauDatHang; set => donYeuCauDatHang = value; }
     }
 }

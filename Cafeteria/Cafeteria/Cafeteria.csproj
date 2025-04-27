@@ -63,17 +63,17 @@
   <ItemGroup>
     <Compile Include="DAO\DonNhapKhoDAO.cs" />
     <Compile Include="DAO\DonXuatKhoDAO.cs" />
-    <Compile Include="DAO\DonYeuCauDatHangDAO.cs" />
+    <Compile Include="DAO\DonYeuCauNhapHangDAO.cs" />
     <Compile Include="DAO\DSNhapKhoDAO.cs" />
     <Compile Include="DAO\DSXuatKhoDAO.cs" />
-    <Compile Include="DAO\DSYeuCauDatHangDAO.cs" />
+    <Compile Include="DAO\DSYeuCauNhapHangDAO.cs" />
     <Compile Include="DAO\NguyenLieuDAO.cs" />
     <Compile Include="DAO\NLTrongKhoDAO.cs" />
     <Compile Include="DAO\QuyCachDAO.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="DTO\DonNhapKho.cs" />
     <Compile Include="DTO\DonXuatKho.cs" />
-    <Compile Include="DTO\DonYeuCauDatHang.cs" />
+    <Compile Include="DTO\DonYeuCauNhapHang.cs" />
     <Compile Include="DTO\DSNhapKho.cs" />
     <Compile Include="DTO\DSXuatKho.cs" />
     <Compile Include="FDanhSachDon.cs">
@@ -112,7 +112,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DTO\QuyCach.cs" />
     <Compile Include="TestClass.cs" />
-    <Compile Include="DTO\DSYeuCauDatHang.cs" />
+    <Compile Include="DTO\DSYeuCauNhapHang.cs" />
     <EmbeddedResource Include="FDanhSachDon.resx">
       <DependentUpon>FDanhSachDon.cs</DependentUpon>
     </EmbeddedResource>

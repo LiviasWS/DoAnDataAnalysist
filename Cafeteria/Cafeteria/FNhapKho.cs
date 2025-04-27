@@ -211,5 +211,11 @@ namespace Cafeteria
             }
             donNhapKhoDAO.EditDonNhapKho(donNhapKho);
         }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            FDanhSachDon fDanhSachDon = new FDanhSachDon();
+            fDanhSachDon.ShowDialog();
+        }
     }
 }

@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Cafeteria.DAO
 {
-    internal class DSYeuCauDatHangDAO
+    internal class DSYeuCauNhapHangDAO
     {
         DBConnection db = new DBConnection();
-        public void AddDSYeuCauDatHang(DSYeuCauDatHang dsYeuCau)
+        public void AddDSYeuCauDatHang(DSYeuCauNhapHang dsYeuCau)
         {
             string query = string.Format("INSERT INTO ChiTietDonYCNhapHang (MaDonYeuCau, MaNL, SoLuong, MaQC) VALUES ({0}, {1}, {2}, {3})", 
                 dsYeuCau.DonYeuCauDatHang.MaDonYeuCau, dsYeuCau.NguyenLieu.MaNL, dsYeuCau.SoLuong, dsYeuCau.QuyCach.MaQC);

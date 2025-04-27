@@ -13,11 +13,13 @@ namespace Cafeteria.DTO
         private int idNguoiTao;
         private string ghiChu;
         private DateTime ngayXuatKho;
+        private bool trangThai;
         public int MaDonXuatKho { get => maDonXuatKho; set => maDonXuatKho = value; }
         public DateTime NgayTao { get => ngayTao; set => ngayTao = value; }
         public int IdNguoiTao { get => idNguoiTao; set => idNguoiTao = value; }
         public string GhiChu { get => ghiChu; set => ghiChu = value; }
         public DateTime NgayXuatKho { get => ngayXuatKho; set => ngayXuatKho = value; }
+        public bool TrangThai { get => trangThai; set => trangThai = value; }
         public DonXuatKho(int maDonXuatKho, DateTime ngayTao, int idNguoiTao, string ghiChu, DateTime ngayXuatKho)
         {
             this.maDonXuatKho = maDonXuatKho;
