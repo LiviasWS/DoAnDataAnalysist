@@ -15,6 +15,7 @@ namespace Cafeteria
     public partial class FThongTinDatHang : Form
     {
         private List<CTYCDatHang> list;
+        private DBConnection conn = new DBConnection();
         public FThongTinDatHang(List<CTYCDatHang> list)
         {
             InitializeComponent();
@@ -28,19 +29,22 @@ namespace Cafeteria
             ChiTietDonDatHangDAO chiTietDonDatHangDAO = new ChiTietDonDatHangDAO();
             CTYCDatHangDAO cTYCDatHangDAO = new CTYCDatHangDAO();
             NhaCungCap nhaCungCap = nhaCungCapDAO.GetNhaCungCapByName(cbbNhaCungCap.Text);
-
-            donDatHangDAO.AddDonDatHang(nhaCungCap.MaNCC, DateTime.Now, Convert.ToInt32(txtTongGiaTri.Text),
-                Convert.ToDateTime(dtpCompleteDate), txtGhiChu.Text);
-            foreach(CTYCDatHang ct in list)
+            int mancc = nhaCungCap.MaNCC;
+            DateTime ngayGiao = DateTime.Now;
+            DateTime ngayNhan = dtpCompleteDate.Value;
+            NhaCungCap ncc = nhaCungCapDAO.GetNhaCungCapByName(cbbNhaCungCap.Text);
+            string sqlCommand1 = "INSERT INTO DonDatHang (MANCC, NGAYTAO, TONGGIATRI, NGAYGIAO, GHICHU) VALUES (" + mancc + ",'" +
+                ngayNhan + "', " + txtTongGiaTri.Text + ", '" + ngayGiao + "', '" + txtGhiChu.Text + "')";
+            conn.Execute(sqlCommand1);
+            foreach (CTYCDatHang ct in list)
             {
-                ChiTietDonDatHang ctDH = new ChiTietDonDatHang();
-                ctDH.Maddh = donDatHangDAO.GetIDDonDatHang();
-                ctDH.Manl = ct.MaNL;
-                ctDH.Soluong = ct.MaNL;
-                chiTietDonDatHangDAO.Add_ChiTietDonDatHang(ctDH);
-                cTYCDatHangDAO.UpdateTrangThai(ct.MaDonYeuCau, ct.MaNL);
+                int maNL = ct.MaNL;
+                int maQC = ct.MaQC;
+                int maDYC = ct.MaDonYeuCau;
+                string sqlCommand2 = "EXEC ADD_CHITIET_DONDATHANG @MANL = " + maNL + ", @SOLUONG =" + txtTongGiaTri.Text + ", @MAQC =" + maQC + ", @MADYC = " + maDYC;
+                conn.Execute(sqlCommand2);
             }
-            
+
         }
 
         private void FThongTinDatHang_Load(object sender, EventArgs e)

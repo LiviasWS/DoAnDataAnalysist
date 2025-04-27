@@ -106,3 +106,8 @@ C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\De
 C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.UCYeuCauNhapHangItem.resources
 C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.FYeuCauDathang.resources
 C:\Users\Administrator\source\repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.FYeuCauNhapHang.resources
+C:\Users\Anya\Source\Repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.FDanhSachDon.resources
+C:\Users\Anya\Source\Repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.FKho.resources
+C:\Users\Anya\Source\Repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.FNhapKho.resources
+C:\Users\Anya\Source\Repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.FXuatKho.resources
+C:\Users\Anya\Source\Repos\DoAnDataAnalysist\Cafeteria\Cafeteria\obj\Debug\Cafeteria.FYeuCauNhapHang.resources
