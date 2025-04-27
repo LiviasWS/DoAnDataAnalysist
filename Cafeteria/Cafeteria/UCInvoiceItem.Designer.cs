@@ -31,7 +31,6 @@
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblNote = new System.Windows.Forms.Label();
             this.lblPaymentMethod = new System.Windows.Forms.Label();
-            this.lblEmployee = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -40,7 +39,7 @@
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.lblPrice.Location = new System.Drawing.Point(526, 12);
+            this.lblPrice.Location = new System.Drawing.Point(534, 12);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(38, 16);
             this.lblPrice.TabIndex = 9;
@@ -51,7 +50,7 @@
             this.lblNote.AutoSize = true;
             this.lblNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNote.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lblNote.Location = new System.Drawing.Point(431, 12);
+            this.lblNote.Location = new System.Drawing.Point(410, 12);
             this.lblNote.Name = "lblNote";
             this.lblNote.Size = new System.Drawing.Size(36, 16);
             this.lblNote.TabIndex = 8;
@@ -62,22 +61,11 @@
             this.lblPaymentMethod.AutoSize = true;
             this.lblPaymentMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaymentMethod.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.lblPaymentMethod.Location = new System.Drawing.Point(245, 12);
+            this.lblPaymentMethod.Location = new System.Drawing.Point(224, 12);
             this.lblPaymentMethod.Name = "lblPaymentMethod";
             this.lblPaymentMethod.Size = new System.Drawing.Size(108, 16);
             this.lblPaymentMethod.TabIndex = 7;
             this.lblPaymentMethod.Text = "Payment method";
-            // 
-            // lblEmployee
-            // 
-            this.lblEmployee.AutoSize = true;
-            this.lblEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployee.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.lblEmployee.Location = new System.Drawing.Point(129, 12);
-            this.lblEmployee.Name = "lblEmployee";
-            this.lblEmployee.Size = new System.Drawing.Size(69, 16);
-            this.lblEmployee.TabIndex = 6;
-            this.lblEmployee.Text = "Employee";
             // 
             // lblDate
             // 
@@ -97,12 +85,12 @@
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblNote);
             this.Controls.Add(this.lblPaymentMethod);
-            this.Controls.Add(this.lblEmployee);
             this.Controls.Add(this.lblDate);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "UCInvoiceItem";
             this.Size = new System.Drawing.Size(609, 41);
             this.Load += new System.EventHandler(this.UCInvoiceItem_Load);
+            this.Click += new System.EventHandler(this.UCInvoiceItem_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,7 +101,6 @@
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblNote;
         private System.Windows.Forms.Label lblPaymentMethod;
-        private System.Windows.Forms.Label lblEmployee;
         private System.Windows.Forms.Label lblDate;
     }
 }

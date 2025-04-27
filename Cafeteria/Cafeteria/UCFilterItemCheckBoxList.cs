@@ -39,10 +39,10 @@ namespace Cafeteria
 
             int r = cornerRadius;
 
-            path.AddArc(bounds.X, bounds.Y, r, r, 180, 90);                            // góc trên trái
-            path.AddArc(bounds.Right - r, bounds.Y, r, r, 270, 90);                    // góc trên phải
-            path.AddArc(bounds.Right - r, bounds.Bottom - r, r, r, 0, 90);            // góc dưới phải
-            path.AddArc(bounds.X, bounds.Bottom - r, r, r, 90, 90);                   // góc dưới trái
+            path.AddArc(bounds.X, bounds.Y, r, r, 180, 90);                            
+            path.AddArc(bounds.Right - r, bounds.Y, r, r, 270, 90);                    
+            path.AddArc(bounds.Right - r, bounds.Bottom - r, r, r, 0, 90);            
+            path.AddArc(bounds.X, bounds.Bottom - r, r, r, 90, 90);                   
             path.CloseAllFigures();
 
             this.Region = new Region(path);

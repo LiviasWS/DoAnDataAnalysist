@@ -30,6 +30,10 @@ namespace Cafeteria
             this.function = function;
             this.objectName = objectName;
         }
+        public FGeneralInformation(string function)
+        {
+            this.function = function;
+        }
 
         private void FGeneralInformation_Load(object sender, EventArgs e)
         {
@@ -42,7 +46,47 @@ namespace Cafeteria
             if (this.function == "ModifyProduct")
             {
                 ModifyProductFormMode();
-            }    
+            }
+            if (this.function == "AddMaterial")
+            {
+                AddMaterialMode();
+            }
+            if (this.function == "ModifyMaterial")
+            {
+                ModifyMaterialMode();
+            }
+            if (this.function == "AddSupplier")
+            {
+                AddSupplierFormMode();
+            }
+
+        }
+
+        private void AddSupplierFormMode()
+        {
+            lblTitle.Text = "Add Supplier";
+            UCGeneralInformationItem ucName = new UCGeneralInformationItem("Tên Nhà Cung Cấp", "");
+            UCGeneralInformationItem ucSDT = new UCGeneralInformationItem("Số điện thoại", "");
+            UCGeneralInformationItem ucDiaChi = new UCGeneralInformationItem("Địa chỉ", "");
+            UCGeneralInformationItem ucMoTa = new UCGeneralInformationItem("Mô tả", "");
+            flpList.Controls.Add(ucName);
+            flpList.Controls.Add(ucSDT);
+            flpList.Controls.Add(ucDiaChi);
+            flpList.Controls.Add(ucMoTa);
+        }
+
+        private void ModifyMaterialMode() 
+        {
+            
+        }
+
+        private void AddMaterialMode()
+        {
+            lblTitle.Text = "Add new material";
+            UCGeneralInformationItem ucName = new UCGeneralInformationItem("Tên nguyên liệu", "");
+            UCGeneralInformationItem ucUnit = new UCGeneralInformationItem("Đơn vị", "");
+            flpList.Controls.Add(ucName);
+            flpList.Controls.Add(ucUnit);
         }
 
         private void ModifyProductFormMode()
@@ -98,6 +142,40 @@ namespace Cafeteria
             {
                 ModifyProductFunction();
             }
+            if(this.function == "AddMaterial")
+            {
+                AddMaterial();
+            }    
+            if(this.function == "AddSupplier")
+            {
+                AddSupplier();
+            }    
+        }
+
+        private void AddSupplier()
+        {
+            string[] input = new string[10];
+            int i = 0;
+            foreach(UCGeneralInformationItem uc in flpList.Controls)
+            {
+                input[i++] = uc.getValue();
+            }    
+            NhaCungCapDAO nhaCungCapDAO = new NhaCungCapDAO();
+            nhaCungCapDAO.AddNhaCungCap(input[0], input[1], input[2], input[3]);
+            this.Close();
+        }
+
+        private void AddMaterial()
+        {
+            string[] input = new string[10];
+            int i = 0;
+            foreach(UCGeneralInformationItem uc in flpList.Controls)
+            {
+                input[i++] = uc.getValue();
+            }
+            string sqlCommand = "EXEC ADD_NGUYENLIEU" + " @TENNL = '" + input[0] + "', @DONVI = '" + input[1] +"'";
+            connection.Execute(sqlCommand);
+            this.Close();
         }
 
         private void ModifyProductFunction()

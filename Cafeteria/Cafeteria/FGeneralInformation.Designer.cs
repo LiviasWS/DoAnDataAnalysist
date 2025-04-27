@@ -33,6 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.rtxtTest = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -91,11 +92,22 @@
             this.panel2.Size = new System.Drawing.Size(408, 90);
             this.panel2.TabIndex = 3;
             // 
+            // rtxtTest
+            // 
+            this.rtxtTest.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxtTest.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtTest.Location = new System.Drawing.Point(310, 12);
+            this.rtxtTest.Name = "rtxtTest";
+            this.rtxtTest.Size = new System.Drawing.Size(155, 20);
+            this.rtxtTest.TabIndex = 4;
+            this.rtxtTest.Text = "";
+            // 
             // FGeneralInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 548);
+            this.Controls.Add(this.rtxtTest);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flpList);
@@ -116,5 +128,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RichTextBox rtxtTest;
     }
 }

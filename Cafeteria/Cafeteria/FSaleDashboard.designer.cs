@@ -29,8 +29,12 @@
         private void InitializeComponent()
         {
             this.msMainMenu = new System.Windows.Forms.MenuStrip();
+            this.msItemSale = new System.Windows.Forms.ToolStripMenuItem();
             this.msItemSaleOverview = new System.Windows.Forms.ToolStripMenuItem();
+            this.msMaterial = new System.Windows.Forms.ToolStripMenuItem();
+            this.msItemMaterialList = new System.Windows.Forms.ToolStripMenuItem();
             this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msItemProductList = new System.Windows.Forms.ToolStripMenuItem();
             this.pButtonList = new System.Windows.Forms.Panel();
             this.flpFilter = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -39,9 +43,12 @@
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblNote = new System.Windows.Forms.Label();
             this.lblPaymentMethod = new System.Windows.Forms.Label();
-            this.lblEmployee = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.flpList = new System.Windows.Forms.FlowLayoutPanel();
+            this.materialRequestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.supplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msItemSupplierList = new System.Windows.Forms.ToolStripMenuItem();
+            this.msItemMakeOrder = new System.Windows.Forms.ToolStripMenuItem();
             this.msMainMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -51,8 +58,10 @@
             this.msMainMenu.AutoSize = false;
             this.msMainMenu.BackColor = System.Drawing.Color.Peru;
             this.msMainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msItemSaleOverview,
-            this.productToolStripMenuItem});
+            this.msItemSale,
+            this.msMaterial,
+            this.productToolStripMenuItem,
+            this.supplierToolStripMenuItem});
             this.msMainMenu.Location = new System.Drawing.Point(0, 0);
             this.msMainMenu.Name = "msMainMenu";
             this.msMainMenu.Padding = new System.Windows.Forms.Padding(20, 2, 0, 2);
@@ -60,25 +69,63 @@
             this.msMainMenu.TabIndex = 0;
             this.msMainMenu.Text = "menuStrip1";
             // 
+            // msItemSale
+            // 
+            this.msItemSale.AutoSize = false;
+            this.msItemSale.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msItemSaleOverview});
+            this.msItemSale.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msItemSale.ForeColor = System.Drawing.SystemColors.Window;
+            this.msItemSale.Name = "msItemSale";
+            this.msItemSale.Size = new System.Drawing.Size(122, 36);
+            this.msItemSale.Text = "Sale";
+            this.msItemSale.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
+            // 
             // msItemSaleOverview
             // 
-            this.msItemSaleOverview.AutoSize = false;
-            this.msItemSaleOverview.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.msItemSaleOverview.ForeColor = System.Drawing.SystemColors.Window;
             this.msItemSaleOverview.Name = "msItemSaleOverview";
-            this.msItemSaleOverview.Size = new System.Drawing.Size(110, 36);
+            this.msItemSaleOverview.Size = new System.Drawing.Size(163, 22);
             this.msItemSaleOverview.Text = "Sale Overview";
-            this.msItemSaleOverview.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
+            this.msItemSaleOverview.Click += new System.EventHandler(this.msItemSaleOverview_Click);
+            // 
+            // msMaterial
+            // 
+            this.msMaterial.AutoSize = false;
+            this.msMaterial.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msItemMaterialList,
+            this.materialRequestToolStripMenuItem,
+            this.msItemMakeOrder});
+            this.msMaterial.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msMaterial.ForeColor = System.Drawing.SystemColors.Window;
+            this.msMaterial.Name = "msMaterial";
+            this.msMaterial.Size = new System.Drawing.Size(110, 36);
+            this.msMaterial.Text = "Material";
+            // 
+            // msItemMaterialList
+            // 
+            this.msItemMaterialList.Name = "msItemMaterialList";
+            this.msItemMaterialList.Size = new System.Drawing.Size(180, 22);
+            this.msItemMaterialList.Text = "Material List";
+            this.msItemMaterialList.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.msItemMaterialList.Click += new System.EventHandler(this.msItemMaterialList_Click);
             // 
             // productToolStripMenuItem
             // 
             this.productToolStripMenuItem.AutoSize = false;
+            this.productToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msItemProductList});
             this.productToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
             this.productToolStripMenuItem.Size = new System.Drawing.Size(110, 36);
             this.productToolStripMenuItem.Text = "Product";
-            this.productToolStripMenuItem.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
+            // 
+            // msItemProductList
+            // 
+            this.msItemProductList.Name = "msItemProductList";
+            this.msItemProductList.Size = new System.Drawing.Size(180, 22);
+            this.msItemProductList.Text = "Product List";
+            this.msItemProductList.Click += new System.EventHandler(this.msItemProductList_Click);
             // 
             // pButtonList
             // 
@@ -121,7 +168,6 @@
             this.panel2.Controls.Add(this.lblPrice);
             this.panel2.Controls.Add(this.lblNote);
             this.panel2.Controls.Add(this.lblPaymentMethod);
-            this.panel2.Controls.Add(this.lblEmployee);
             this.panel2.Controls.Add(this.lblDate);
             this.panel2.Location = new System.Drawing.Point(247, 147);
             this.panel2.Name = "panel2";
@@ -133,10 +179,10 @@
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblPrice.Location = new System.Drawing.Point(519, 21);
+            this.lblPrice.Location = new System.Drawing.Point(531, 19);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(43, 16);
-            this.lblPrice.TabIndex = 4;
+            this.lblPrice.TabIndex = 13;
             this.lblPrice.Text = "Total";
             // 
             // lblNote
@@ -144,10 +190,10 @@
             this.lblNote.AutoSize = true;
             this.lblNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNote.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblNote.Location = new System.Drawing.Point(426, 21);
+            this.lblNote.Location = new System.Drawing.Point(404, 19);
             this.lblNote.Name = "lblNote";
             this.lblNote.Size = new System.Drawing.Size(40, 16);
-            this.lblNote.TabIndex = 3;
+            this.lblNote.TabIndex = 12;
             this.lblNote.Text = "Note";
             // 
             // lblPaymentMethod
@@ -155,32 +201,21 @@
             this.lblPaymentMethod.AutoSize = true;
             this.lblPaymentMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaymentMethod.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblPaymentMethod.Location = new System.Drawing.Point(250, 21);
+            this.lblPaymentMethod.Location = new System.Drawing.Point(208, 19);
             this.lblPaymentMethod.Name = "lblPaymentMethod";
             this.lblPaymentMethod.Size = new System.Drawing.Size(122, 16);
-            this.lblPaymentMethod.TabIndex = 2;
+            this.lblPaymentMethod.TabIndex = 11;
             this.lblPaymentMethod.Text = "Payment method";
-            // 
-            // lblEmployee
-            // 
-            this.lblEmployee.AutoSize = true;
-            this.lblEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployee.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblEmployee.Location = new System.Drawing.Point(124, 21);
-            this.lblEmployee.Name = "lblEmployee";
-            this.lblEmployee.Size = new System.Drawing.Size(77, 16);
-            this.lblEmployee.TabIndex = 1;
-            this.lblEmployee.Text = "Employee";
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblDate.Location = new System.Drawing.Point(36, 21);
+            this.lblDate.Location = new System.Drawing.Point(39, 19);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(40, 16);
-            this.lblDate.TabIndex = 0;
+            this.lblDate.TabIndex = 10;
             this.lblDate.Text = "Date";
             // 
             // flpList
@@ -189,6 +224,38 @@
             this.flpList.Name = "flpList";
             this.flpList.Size = new System.Drawing.Size(612, 413);
             this.flpList.TabIndex = 8;
+            // 
+            // materialRequestToolStripMenuItem
+            // 
+            this.materialRequestToolStripMenuItem.Name = "materialRequestToolStripMenuItem";
+            this.materialRequestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.materialRequestToolStripMenuItem.Text = "Material Request";
+            this.materialRequestToolStripMenuItem.Click += new System.EventHandler(this.materialRequestToolStripMenuItem_Click);
+            // 
+            // supplierToolStripMenuItem
+            // 
+            this.supplierToolStripMenuItem.AutoSize = false;
+            this.supplierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msItemSupplierList});
+            this.supplierToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supplierToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
+            this.supplierToolStripMenuItem.Name = "supplierToolStripMenuItem";
+            this.supplierToolStripMenuItem.Size = new System.Drawing.Size(110, 36);
+            this.supplierToolStripMenuItem.Text = "Supplier";
+            // 
+            // msItemSupplierList
+            // 
+            this.msItemSupplierList.Name = "msItemSupplierList";
+            this.msItemSupplierList.Size = new System.Drawing.Size(180, 22);
+            this.msItemSupplierList.Text = "Supplier List";
+            this.msItemSupplierList.Click += new System.EventHandler(this.supplierListToolStripMenuItem_Click);
+            // 
+            // msItemMakeOrder
+            // 
+            this.msItemMakeOrder.Name = "msItemMakeOrder";
+            this.msItemMakeOrder.Size = new System.Drawing.Size(180, 22);
+            this.msItemMakeOrder.Text = "Make Order";
+            this.msItemMakeOrder.Click += new System.EventHandler(this.makeỎderToolStripMenuItem_Click);
             // 
             // FSaleDashboard
             // 
@@ -217,18 +284,25 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip msMainMenu;
-        private System.Windows.Forms.ToolStripMenuItem msItemSaleOverview;
+        private System.Windows.Forms.ToolStripMenuItem msItemSale;
         private System.Windows.Forms.Panel pButtonList;
         private System.Windows.Forms.FlowLayoutPanel flpFilter;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ToolStripMenuItem productToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem msMaterial;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.FlowLayoutPanel flpList;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblNote;
         private System.Windows.Forms.Label lblPaymentMethod;
-        private System.Windows.Forms.Label lblEmployee;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.FlowLayoutPanel flpList;
+        private System.Windows.Forms.ToolStripMenuItem msItemSaleOverview;
+        private System.Windows.Forms.ToolStripMenuItem msItemMaterialList;
+        private System.Windows.Forms.ToolStripMenuItem productToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem msItemProductList;
+        private System.Windows.Forms.ToolStripMenuItem materialRequestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem supplierToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem msItemSupplierList;
+        private System.Windows.Forms.ToolStripMenuItem msItemMakeOrder;
     }
 }

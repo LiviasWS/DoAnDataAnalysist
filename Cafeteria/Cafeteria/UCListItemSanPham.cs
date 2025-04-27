@@ -55,5 +55,10 @@ namespace Cafeteria
         {
 
         }
+
+        private void UCListItemSanPham_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

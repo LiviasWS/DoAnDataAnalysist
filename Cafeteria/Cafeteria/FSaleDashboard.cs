@@ -61,7 +61,23 @@ namespace Cafeteria
             }    
         }
 
-        private void productToolStripMenuItem_Click(object sender, EventArgs e)
+        private void msItemSaleOverview_Click(object sender, EventArgs e)
+        {
+            FSaleDashboard fSaleDashboard = new FSaleDashboard();
+            this.Hide();
+            fSaleDashboard.ShowDialog();
+            this.Show();
+        }
+
+        private void msItemMaterialList_Click(object sender, EventArgs e)
+        {
+            FMaterialList fMaterialList = new FMaterialList();
+            this.Hide();
+            fMaterialList.ShowDialog();
+            this.Show();
+        }
+
+        private void msItemProductList_Click(object sender, EventArgs e)
         {
             FProductManage fProductManage = new FProductManage();
             this.Hide();
@@ -69,5 +85,28 @@ namespace Cafeteria
             this.Show();
         }
 
+        private void materialRequestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FYeuCauDathang f = new FYeuCauDathang();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void supplierListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FSupplier supplier = new FSupplier();
+            this.Hide();
+            supplier.ShowDialog();
+            this.Show();
+        }
+
+        private void makeỎderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FDatNguyenLieu f = new FDatNguyenLieu();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
     }
 }

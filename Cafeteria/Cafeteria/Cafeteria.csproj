@@ -61,7 +61,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ChiTietDonDatHangDAO.cs" />
+    <Compile Include="DAO\ChiTietDonNhapHang.cs" />
+    <Compile Include="DAO\CTYCDatHangDAO.cs" />
+    <Compile Include="DAO\DonDatHangDAO.cs" />
+    <Compile Include="DTO\ChiTietDonDatHang.cs" />
+    <Compile Include="DTO\CTYCDatHang.cs" />
+    <Compile Include="DAO\DonYeuCauDatHangDAO.cs" />
     <Compile Include="DAO\HoaDonDAO.cs" />
+    <Compile Include="DAO\NguyenLieuDAO.cs" />
+    <Compile Include="DAO\NhaCungCapDAO.cs" />
+    <Compile Include="DAO\NLTrongKhoDAO.cs" />
+    <Compile Include="DAO\QuyCachDAO.cs" />
     <Compile Include="DAO\SanPhamDAO.cs" />
     <Compile Include="DAO\ChiTietDonHangDAO.cs" />
     <Compile Include="DAO\DonHangDAO.cs" />
@@ -69,8 +80,26 @@
     <Compile Include="DAO\HoaDonDonHangDAO.cs" />
     <Compile Include="DAO\SanPhamDAO.cs" />
     <Compile Include="DBConnection.cs" />
+    <Compile Include="DTO\DonDatHang.cs" />
+    <Compile Include="DTO\DonYeuCauNhapHang.cs" />
     <Compile Include="DTO\HoaDon.cs" />
+    <Compile Include="DTO\NguyenLieu.cs" />
+    <Compile Include="DTO\NhaCungCap.cs" />
+    <Compile Include="DTO\NLTrongKho.cs" />
+    <Compile Include="DTO\QuyCach.cs" />
     <Compile Include="DTO\SanPham.cs" />
+    <Compile Include="FDatNguyenLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDatNguyenLieu.Designer.cs">
+      <DependentUpon>FDatNguyenLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGeneralDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGeneralDetail.Designer.cs">
+      <DependentUpon>FGeneralDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="FGeneralInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,11 +135,23 @@
     <Compile Include="FEditSP.designer.cs">
       <DependentUpon>FEditSP.cs</DependentUpon>
     </Compile>
+    <Compile Include="FInformation2Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInformation2Input.Designer.cs">
+      <DependentUpon>FInformation2Input.cs</DependentUpon>
+    </Compile>
     <Compile Include="FLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FLogin.designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMaterialList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMaterialList.Designer.cs">
+      <DependentUpon>FMaterialList.cs</DependentUpon>
     </Compile>
     <Compile Include="FOrderList.cs">
       <SubType>Form</SubType>
@@ -136,16 +177,67 @@
     <Compile Include="FSaleDashboard.designer.cs">
       <DependentUpon>FSaleDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="FSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSupplier.Designer.cs">
+      <DependentUpon>FSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FThongTinDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FThongTinDatHang.Designer.cs">
+      <DependentUpon>FThongTinDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FYeuCauDathang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FYeuCauDathang.Designer.cs">
+      <DependentUpon>FYeuCauDathang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCDatHangItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDatHangItem.Designer.cs">
+      <DependentUpon>UCDatHangItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHoaDonDetailItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHoaDonDetailItem.Designer.cs">
+      <DependentUpon>UCHoaDonDetailItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMaterialListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMaterialListItem.Designer.cs">
+      <DependentUpon>UCMaterialListItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCQuantity.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UCQuantity.Designer.cs">
       <DependentUpon>UCQuantity.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCSupplierListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSupplierListItem.Designer.cs">
+      <DependentUpon>UCSupplierListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCYeuCauNhapHangItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCYeuCauNhapHangItem.Designer.cs">
+      <DependentUpon>UCYeuCauNhapHangItem.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FBill.resx">
       <DependentUpon>FBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDatNguyenLieu.resx">
+      <DependentUpon>FDatNguyenLieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FDetailSP.resx">
       <DependentUpon>FDetailSP.cs</DependentUpon>
@@ -156,8 +248,17 @@
     <EmbeddedResource Include="FEditSP.resx">
       <DependentUpon>FEditSP.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FGeneralDetail.resx">
+      <DependentUpon>FGeneralDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FInformation2Input.resx">
+      <DependentUpon>FInformation2Input.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMaterialList.resx">
+      <DependentUpon>FMaterialList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FOrderList.resx">
       <DependentUpon>FOrderList.cs</DependentUpon>
@@ -204,6 +305,18 @@
     <EmbeddedResource Include="FGeneralInformation.resx">
       <DependentUpon>FGeneralInformation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FSaleDashboard.resx">
+      <DependentUpon>FSaleDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSupplier.resx">
+      <DependentUpon>FSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FThongTinDatHang.resx">
+      <DependentUpon>FThongTinDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FYeuCauDathang.resx">
+      <DependentUpon>FYeuCauDathang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -214,6 +327,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UCDatHangItem.resx">
+      <DependentUpon>UCDatHangItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCFilterItemCheckBoxList.resx">
       <DependentUpon>UCFilterItemCheckBoxList.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,6 +338,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCGeneralInformationItem.resx">
       <DependentUpon>UCGeneralInformationItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHoaDonDetailItem.resx">
+      <DependentUpon>UCHoaDonDetailItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCInvoiceItem.resx">
       <DependentUpon>UCInvoiceItem.cs</DependentUpon>
@@ -232,8 +351,17 @@
     <EmbeddedResource Include="UCListItemSanPham.resx">
       <DependentUpon>UCListItemSanPham.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCMaterialListItem.resx">
+      <DependentUpon>UCMaterialListItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCQuantity.resx">
       <DependentUpon>UCQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSupplierListItem.resx">
+      <DependentUpon>UCSupplierListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCYeuCauNhapHangItem.resx">
+      <DependentUpon>UCYeuCauNhapHangItem.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

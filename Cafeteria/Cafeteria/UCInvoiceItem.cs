@@ -1,4 +1,5 @@
-﻿using Cafeteria.DTO;
+﻿using Cafeteria.DAO;
+using Cafeteria.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,10 +35,15 @@ namespace Cafeteria
             }
 
             lblDate.Text = hoaDon.ngayTao.ToLongDateString();
-            lblEmployee.Text = hoaDon.idNguoiTao.ToString();
-            lblPaymentMethod.Text = hoaDon.ToString();
-            lblNote.Text = hoaDon.ToString();
-            lblPrice.Text = hoaDon.ToString();
+            lblPaymentMethod.Text = hoaDon.phuongThuc.ToString();
+            lblNote.Text = hoaDon.ghiChu.ToString();
+            lblPrice.Text = hoaDon.tongHD.ToString();
+        }
+
+        private void UCInvoiceItem_Click(object sender, EventArgs e)
+        {
+            FGeneralDetail f = new FGeneralDetail(hoaDon.maHD, "DetailHoaDon");
+            f.ShowDialog();
         }
     }
 }

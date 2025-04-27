@@ -86,6 +86,7 @@
             this.Name = "UCListItemSanPham";
             this.Size = new System.Drawing.Size(600, 40);
             this.Load += new System.EventHandler(this.UCListItem_Load);
+            this.Click += new System.EventHandler(this.UCListItemSanPham_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
