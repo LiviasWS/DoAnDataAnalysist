@@ -14,12 +14,14 @@ namespace Cafeteria
         private string ghiChu;
         private DateTime ngayNhapKho;
         private int tongGiaTri;
+        private int maDonDatHang;
         public int MaDonNhapKho { get => maDonNhapKho; set => maDonNhapKho = value; }
         public DateTime NgayTao { get => ngayTao; set => ngayTao = value; }
         public int NguoiTao { get => nguoiTao; set => nguoiTao = value; }
         public string GhiChu { get => ghiChu; set => ghiChu = value; }
         public DateTime NgayNhapKho { get => ngayNhapKho; set => ngayNhapKho = value; }
         public int TongGiaTri { get => tongGiaTri; set => tongGiaTri = value; }
+        public int MaDonDatHang { get => maDonDatHang; set => maDonDatHang = value; }
         public DonNhapKho(int maDonNhapKho, DateTime ngayTao, int nguoiTao, string ghiChu, DateTime ngayNhapKho, int tongGiaTri)
         {
             this.maDonNhapKho = maDonNhapKho;

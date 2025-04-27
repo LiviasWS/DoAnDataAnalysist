@@ -12,8 +12,8 @@ namespace Cafeteria.DAO
         DBConnection db = new DBConnection();
         public void AddDSNhapKho(DSNhapKho dsNhapKho)
         {
-            string query = string.Format("INSERT INTO ChiTietDonNhapKho (MaDonNhapKho, MaNL, SoLuong, MaQC, GiaTien) VALUES ({0}, {1}, {2}, {3}, {4})",
-                dsNhapKho.DonNhapKho.MaDonNhapKho, dsNhapKho.NguyenLieu.MaNL, dsNhapKho.SoLuong, dsNhapKho.QuyCach.MaQC, dsNhapKho.GiaTien);
+            string query = string.Format("INSERT INTO ChiTietDonNhapKho (MaDonNhapKho, MaNL, SoLuong, MaQC) VALUES ({0}, {1}, {2}, {3})",
+                dsNhapKho.DonNhapKho.MaDonNhapKho, dsNhapKho.NguyenLieu.MaNL, dsNhapKho.SoLuong, dsNhapKho.QuyCach.MaQC);
             db.Execute(query);
         }
         public DataTable GetDSNhapKhoByDon(int id)

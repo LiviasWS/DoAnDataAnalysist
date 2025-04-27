@@ -33,6 +33,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dGVDonYCNhapHang = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnXacNhan = new System.Windows.Forms.Button();
             this.dGVDonXuatKho = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dGVDonNhapKho = new System.Windows.Forms.DataGridView();
@@ -40,7 +41,6 @@
             this.lblNgayTrienKhai = new System.Windows.Forms.Label();
             this.lblGhiChu = new System.Windows.Forms.Label();
             this.lblTongTien = new System.Windows.Forms.Label();
-            this.btnXacNhan = new System.Windows.Forms.Button();
             this.lblId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dGVDSNguyenLieu)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -103,6 +103,16 @@
             this.tabPage2.Text = "Don Xuat Kho";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // btnXacNhan
+            // 
+            this.btnXacNhan.Location = new System.Drawing.Point(234, 421);
+            this.btnXacNhan.Name = "btnXacNhan";
+            this.btnXacNhan.Size = new System.Drawing.Size(75, 23);
+            this.btnXacNhan.TabIndex = 1;
+            this.btnXacNhan.Text = "Xac Nhan";
+            this.btnXacNhan.UseVisualStyleBackColor = true;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
+            // 
             // dGVDonXuatKho
             // 
             this.dGVDonXuatKho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -118,7 +128,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(315, 470);
+            this.tabPage3.Size = new System.Drawing.Size(315, 449);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Don Nhap Kho";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -168,24 +178,13 @@
             this.lblTongTien.TabIndex = 8;
             this.lblTongTien.Text = "label4";
             // 
-            // btnXacNhan
-            // 
-            this.btnXacNhan.Location = new System.Drawing.Point(234, 421);
-            this.btnXacNhan.Name = "btnXacNhan";
-            this.btnXacNhan.Size = new System.Drawing.Size(75, 23);
-            this.btnXacNhan.TabIndex = 1;
-            this.btnXacNhan.Text = "Xac Nhan";
-            this.btnXacNhan.UseVisualStyleBackColor = true;
-            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
-            // 
             // lblId
             // 
             this.lblId.AutoSize = true;
             this.lblId.Location = new System.Drawing.Point(326, -3);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(35, 13);
+            this.lblId.Size = new System.Drawing.Size(0, 13);
             this.lblId.TabIndex = 9;
-            this.lblId.Text = "label1";
             this.lblId.Visible = false;
             // 
             // FDanhSachDon

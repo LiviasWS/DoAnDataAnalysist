@@ -12,14 +12,14 @@ namespace Cafeteria.DAO
         DBConnection db = new DBConnection();
         public void AddDonNhapKho(DonNhapKho donNhapKho)
         {
-            string query = string.Format("INSERT INTO DonNhapKho (NgayTao, NguoiTao, GhiChu, NgayNhapKho, GiaTriDonNhap) VALUES ('{0}', 2,N'{1}','{2}',{3})",
-                donNhapKho.NgayTao.ToString("MM/dd/yyyy"), donNhapKho.GhiChu, donNhapKho.NgayNhapKho.ToString("MM/dd/yyyy"), donNhapKho.TongGiaTri);
+            string query = string.Format("INSERT INTO DonNhapKho (NgayTao, NguoiTao, GhiChu, NgayNhapKho, GiaTriDonNhap, MaDonDatHang) VALUES ('{0}', 2,N'{1}','{2}',{3}, {4})",
+                donNhapKho.NgayTao.ToString("MM/dd/yyyy"), donNhapKho.GhiChu, donNhapKho.NgayNhapKho.ToString("MM/dd/yyyy"), donNhapKho.TongGiaTri, donNhapKho.MaDonDatHang);
             db.Execute(query);
         }
         public int AddDonNhapKhoGetId(DonNhapKho donNhapKho)
         {
-            string query = string.Format("INSERT INTO DonNhapKho (NgayTao, NguoiTao, GhiChu, NgayNhapKho, GiaTriDonNhap) VALUES ('{0}', 2,N'{1}','{2}',{3}) select SCOPE_IDENTITY()",
-                donNhapKho.NgayTao.ToString("MM/dd/yyyy"), donNhapKho.GhiChu, donNhapKho.NgayNhapKho.ToString("MM/dd/yyyy"), donNhapKho.TongGiaTri);
+            string query = string.Format("INSERT INTO DonNhapKho (NgayTao, NguoiTao, GhiChu, NgayNhapKho, GiaTriDonNhap, MaDonDatHang) VALUES ('{0}', 2,N'{1}','{2}',{3}, {4}) select SCOPE_IDENTITY()",
+                donNhapKho.NgayTao.ToString("MM/dd/yyyy"), donNhapKho.GhiChu, donNhapKho.NgayNhapKho.ToString("MM/dd/yyyy"), donNhapKho.TongGiaTri, donNhapKho.MaDonDatHang);
             int id = db.ExecuteScalar(query);
             return id;
         }

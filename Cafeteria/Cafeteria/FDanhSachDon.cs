@@ -23,6 +23,7 @@ namespace Cafeteria
         DSYeuCauNhapHangDAO dsYeuCauDatHangDAO = new DSYeuCauNhapHangDAO();
         DSXuatKhoDAO dsXuatKhoDAO = new DSXuatKhoDAO();
         DSNhapKhoDAO dsNhapKhoDAO = new DSNhapKhoDAO();
+        int id = 0;
         public FDanhSachDon()
         {
             InitializeComponent();
@@ -47,7 +48,7 @@ namespace Cafeteria
             if(t == dGVDonYCNhapHang.Rows.Count - 1) return;
             int id = int.Parse(dGVDonYCNhapHang.Rows[t].Cells[0].Value.ToString());
             DataTable dt = dsYeuCauDatHangDAO.GetDSYeuCauDatHangByDon(id);
-            lblId.Text = dGVDonYCNhapHang.Rows[t].Cells[0].Value.ToString();
+            id = int.Parse(dGVDonYCNhapHang.Rows[t].Cells[0].Value.ToString());
             lblNgayTao.Text = "Ngay Tao Don " + DateTime.Parse(dGVDonYCNhapHang.Rows[t].Cells[1].Value.ToString()).ToString("dd/MM/yyyy");
             lblGhiChu.Text = "Ghi Chu " + dGVDonYCNhapHang.Rows[t].Cells[3].Value.ToString();
             lblNgayTrienKhai.Text = "Ngay Du Kien Het Hang " + DateTime.Parse(dGVDonYCNhapHang.Rows[t].Cells[4].Value.ToString()).ToString("dd/MM/yyyy");
@@ -63,7 +64,7 @@ namespace Cafeteria
             if (t == dGVDonXuatKho.Rows.Count - 1) return;
             int id = int.Parse(dGVDonXuatKho.Rows[t].Cells[0].Value.ToString());
             DataTable dt = dsXuatKhoDAO.GetDSXuatKhoByDon(id);
-            lblId.Text = dGVDonXuatKho.Rows[t].Cells[0].Value.ToString();
+            id = int.Parse(dGVDonXuatKho.Rows[t].Cells[0].Value.ToString());
             lblNgayTao.Text = "Ngay Tao Don " + DateTime.Parse(dGVDonXuatKho.Rows[t].Cells[1].Value.ToString()).ToString("dd/MM/yyyy");
             lblGhiChu.Text = "Ghi Chu " + dGVDonXuatKho.Rows[t].Cells[3].Value.ToString();
             lblNgayTrienKhai.Text = "Ngay Xuat Kho " + DateTime.Parse(dGVDonXuatKho.Rows[t].Cells[4].Value.ToString()).ToString("dd/MM/yyyy");
@@ -87,7 +88,7 @@ namespace Cafeteria
             if (t == dGVDonNhapKho.Rows.Count - 1) return;
             int id = int.Parse(dGVDonNhapKho.Rows[t].Cells[0].Value.ToString());
             DataTable dt = dsNhapKhoDAO.GetDSNhapKhoByDon(id);
-            lblId.Text = dGVDonNhapKho.Rows[t].Cells[0].Value.ToString();
+            id = int.Parse(dGVDonNhapKho.Rows[t].Cells[0].Value.ToString());
             lblNgayTao.Text = "Ngay Tao Don " + DateTime.Parse(dGVDonNhapKho.Rows[t].Cells[1].Value.ToString()).ToString("dd/MM/yyyy");
             lblGhiChu.Text = "Ghi Chu " + dGVDonNhapKho.Rows[t].Cells[3].Value.ToString();
             lblNgayTrienKhai.Text = "Ngay Nhap Kho " + DateTime.Parse(dGVDonNhapKho.Rows[t].Cells[4].Value.ToString()).ToString("dd/MM/yyyy");
@@ -99,7 +100,6 @@ namespace Cafeteria
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(lblId.Text);
             DonXuatKho donXuatKho = donXuatKhoDAO.FindById(id);
             donXuatKho.TrangThai = true;
             donXuatKhoDAO.EditDonXuatKho(donXuatKho);

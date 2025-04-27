@@ -30,6 +30,11 @@ namespace Cafeteria.DAO
             }
             return id;
         }
+        public DataTable GetAllDonDatHang()
+        {
+            string sqlCommand = "SELECT * FROM DONDATHANG";
+            return conn.Load(sqlCommand);
+        }
 
     }
 }

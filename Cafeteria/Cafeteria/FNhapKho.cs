@@ -21,15 +21,38 @@ namespace Cafeteria
         List<DSNhapKho> dSNhapKhos = new List<DSNhapKho>();
         DonNhapKhoDAO donNhapKhoDAO = new DonNhapKhoDAO();
         DSNhapKhoDAO dSNhapKhoDAO  = new DSNhapKhoDAO();
+        DonDatHangDAO donDatHangDAO = new DonDatHangDAO();
+        ChiTietDonDatHangDAO chiTietDonDatHangDAO = new ChiTietDonDatHangDAO();
+        int id = 0;
+        int tongtien = 0;
         public FNhapKho()
         {
             InitializeComponent();
-            Load_DonNhapHang();
+            Load_DonDatHang();
             Load_Combobox();
+            Load_DSNhapKho();
         }
-        private void Load_DonNhapHang()
+        private void Load()
         {
-
+            DataTable dt = new DataTable();
+            dGVDSNhapKho.DataSource = dt;
+        }
+        private void Load_DonDatHang()
+        {
+            DataTable dt = donDatHangDAO.GetAllDonDatHang();
+            dGVDonDatHang.DataSource = dt;
+        }
+        private void Load_DSNhapKho()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Ten Nguyen Lieu");
+            dt.Columns.Add("So Luong");
+            dt.Columns.Add("Quy Cach");
+            foreach (var item in dSNhapKhos)
+            {
+                dt.Rows.Add(item.NguyenLieu.TenNL, item.SoLuong, item.QuyCach.TenQC);
+            }
+            dGVDSNhapKho.DataSource = dt;
         }
         private void Load_Combobox()
         {
@@ -47,79 +70,53 @@ namespace Cafeteria
             }
             
         }
-        private void Load_DSNhapKho()
-        {
-            DataTable dt = new DataTable();
-            dt.Columns.Add("Ten Nguyen Lieu");
-            dt.Columns.Add("So Luong");
-            dt.Columns.Add("Quy Cach");
-            dt.Columns.Add("Gia Tien");
-            dt.Columns.Add("Tong Tien");
-            foreach (var item in dSNhapKhos)
-            {
-                dt.Rows.Add(item.NguyenLieu.TenNL, item.SoLuong, item.QuyCach.TenQC, item.GiaTien, item.GiaTien * item.SoLuong);
-            }
-            dGVDSNhapKho.DataSource = dt;
-        }
         private void dGVDonNhapHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            Load();
             if (e.RowIndex == -1) return;
-            int t = dGVDonNhapHang.CurrentCell.RowIndex;
-        }
-
-        private void dGVDSNhapKho_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex == -1) return;
-            int t = dGVDonNhapHang.CurrentCell.RowIndex;
-            cbbTenNL.Text = dGVDSNhapKho.Rows[t].Cells[0].Value.ToString();
-            txtSoLuong.Text = dGVDSNhapKho.Rows[t].Cells[1].Value.ToString();
-            txtGiaTiem.Text = dGVDSNhapKho.Rows[t].Cells[3].Value.ToString();
-            cbbQuyCach.Text = dGVDSNhapKho.Rows[t].Cells[2].Value.ToString();
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            string tenNL = cbbTenNL.Text;
-            string soLuong = txtSoLuong.Text;
-            string tenQC = cbbQuyCach.Text;
-            string giaTien = txtGiaTiem.Text;
-            if (Check(tenNL, soLuong, tenQC, giaTien) == false) return;
-            NguyenLieu nguyenLieu = new NguyenLieu(0,tenNL);
-            QuyCach quyCach = new QuyCach(0,tenQC);
-            DSNhapKho dSNhapKho = dSNhapKhos.Find(x => x.NguyenLieu.TenNL == tenNL && x.QuyCach.TenQC == tenQC);
-            if (dSNhapKho != null)
+            int t = dGVDonDatHang.CurrentCell.RowIndex;
+            if (t == dGVDonDatHang.Rows.Count - 1) return;
+            id = int.Parse(dGVDonDatHang.Rows[t].Cells[0].Value.ToString());
+            tongtien = int.Parse(dGVDonDatHang.Rows[t].Cells[3].Value.ToString());
+            txtTongTien.Text = tongtien.ToString();
+            DataTable dt = chiTietDonDatHangDAO.GetChiTietDonDatHangByDon(id);
+            dt.Columns.Remove("MaDonDatHang");
+            dSNhapKhos = new List<DSNhapKho>();
+            foreach (DataRow item in dt.Rows)
             {
-                dSNhapKho.SoLuong += int.Parse(soLuong);
-                if(dSNhapKho.GiaTien != int.Parse(giaTien))
-                {
-                    MessageBox.Show("Gia tien khong khop");
-                    return;
-                }
-            }
-            else
-            {
-                dSNhapKho = new DSNhapKho();
-                dSNhapKho.NguyenLieu = nguyenLieu;
-                dSNhapKho.QuyCach = quyCach;
-                dSNhapKho.SoLuong = int.Parse(soLuong);
-                dSNhapKho.GiaTien = int.Parse(giaTien);
+                DSNhapKho dSNhapKho = new DSNhapKho();
+                dSNhapKho.NguyenLieu = nguyenLieuDAO.FindByName(item["TenNL"].ToString());
+                dSNhapKho.SoLuong = int.Parse(item["SoLuong"].ToString());
+                dSNhapKho.QuyCach = quyCachDAO.FindByName(item["TenQC"].ToString());
                 dSNhapKhos.Add(dSNhapKho);
             }
             Load_DSNhapKho();
         }
 
+        private void dGVDSNhapKho_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex == -1) return;
+            int t = dGVDSNhapKho.CurrentCell.RowIndex;
+            if (t == dGVDonDatHang.Rows.Count - 1) return;
+            cbbTenNL.Text = dGVDSNhapKho.Rows[t].Cells[0].Value.ToString();
+            txtSoLuong.Text = dGVDSNhapKho.Rows[t].Cells[1].Value.ToString();
+            cbbQuyCach.Text = dGVDSNhapKho.Rows[t].Cells[2].Value.ToString();
+        }
         private void btnEdit_Click(object sender, EventArgs e)
         {
             string tenNL = cbbTenNL.Text;
             string soLuong = txtSoLuong.Text;
             string tenQC = cbbQuyCach.Text;
-            string giaTien = txtGiaTiem.Text;
-            if (Check(tenNL, soLuong, tenQC, giaTien) == false) return;
+            if (Check(tenNL, soLuong, tenQC) == false) return;
             DSNhapKho dSNhapKho = dSNhapKhos.Find(x => x.NguyenLieu.TenNL == tenNL && x.QuyCach.TenQC == tenQC);
             if(dSNhapKho != null)
             {
+                if(dSNhapKho.SoLuong < int.Parse(soLuong))
+                {
+                    MessageBox.Show("So luong vuot qua don dat hang");
+                    return;
+                }
                 dSNhapKho.SoLuong = int.Parse(soLuong);
-                dSNhapKho.GiaTien = int.Parse(giaTien);
             }
             else
             {
@@ -134,8 +131,7 @@ namespace Cafeteria
             string tenNL = cbbTenNL.Text;
             string soLuong = txtSoLuong.Text;
             string tenQC = cbbQuyCach.Text;
-            string giaTien = txtGiaTiem.Text;
-            if (Check(tenNL, soLuong, tenQC, giaTien) == false) return;
+            if (Check(tenNL, soLuong, tenQC) == false) return;
             DSNhapKho dSNhapKho = dSNhapKhos.Find(x => x.NguyenLieu.TenNL == tenNL && x.QuyCach.TenQC == tenQC);
             if (dSNhapKho != null)
             {
@@ -148,9 +144,9 @@ namespace Cafeteria
             }
             Load_DSNhapKho();
         }
-        private bool Check(string tenNL, string soLuong, string tenQC, string giaTien)
+        private bool Check(string tenNL, string soLuong, string tenQC)
         {
-            if (string.IsNullOrEmpty(tenNL) || string.IsNullOrEmpty(soLuong) || string.IsNullOrEmpty(tenQC) || string.IsNullOrEmpty(giaTien))
+            if (string.IsNullOrEmpty(tenNL) || string.IsNullOrEmpty(soLuong) || string.IsNullOrEmpty(tenQC))
             {
                 MessageBox.Show("Vui long nhap du thong tin");
                 return false;
@@ -160,19 +156,23 @@ namespace Cafeteria
                 MessageBox.Show("So luong phai la so");
                 return false;
             }
-            if (int.TryParse(giaTien, out int gt) == false)
-            {
-                MessageBox.Show("Gia tien phai la so");
-                return false;
-            }
             return true;
         }
 
         private void btnSend_Click(object sender, EventArgs e)
         {
+            foreach(DSNhapKho item in dSNhapKhos)
+            {
+                NLTrongKho nLTrongKho = nLTrongKhoDAO.FindNLTrongKho(item.NguyenLieu, item.QuyCach);
+                if(nLTrongKho == null)
+                {
+                    MessageBox.Show("Cach luu nguyen lieu khong ton tai trong kho, vui long them vao truoc khi nhap kho");
+                    return;
+                }
+            }
             DonNhapKho donNhapKho = new DonNhapKho(DateTime.Now, 2, txtGhiChu.Text, dateTimePicker1.Value, 0);
+            donNhapKho.MaDonDatHang = id;
             donNhapKho.MaDonNhapKho = donNhapKhoDAO.AddDonNhapKhoGetId(donNhapKho);
-            int tongtien = 0;
             foreach (DSNhapKho item in dSNhapKhos)
             {
                 item.DonNhapKho = donNhapKho;
@@ -182,34 +182,9 @@ namespace Cafeteria
                     nLTrongKho.SoLuong += item.SoLuong;
                     nLTrongKhoDAO.EditNLTrongKho(nLTrongKho);
                 }
-                else
-                {
-                    NguyenLieu nguyenLieu = nguyenLieuDAO.FindByName(item.NguyenLieu.TenNL);
-                    if(nguyenLieu == null)
-                    {
-                        nguyenLieu = new NguyenLieu();
-                        nguyenLieu.TenNL = item.NguyenLieu.TenNL;
-                        nguyenLieu.MaNL = nguyenLieuDAO.AddNguyenLieuGetId(nguyenLieu);
-                    }
-                    QuyCach quyCach = quyCachDAO.FindByName(item.QuyCach.TenQC);
-                    if (quyCach == null)
-                    {
-                        quyCach = new QuyCach();
-                        quyCach.TenQC = item.QuyCach.TenQC;
-                        quyCach.MaQC = quyCachDAO.AddQuyCachGetId(quyCach);
-                    }
-                    nLTrongKho = new NLTrongKho();
-                    nLTrongKho.NguyenLieu = nguyenLieu;
-                    nLTrongKho.SoLuong = item.SoLuong;
-                    nLTrongKho.QuyCach = quyCach;
-                    nLTrongKhoDAO.AddNLTrongKho(nLTrongKho);
-                    item.NguyenLieu = nguyenLieu;
-                    item.QuyCach = quyCach;
-                }
                 dSNhapKhoDAO.AddDSNhapKho(item);
-                tongtien += item.GiaTien * item.SoLuong;
-                donNhapKho.TongGiaTri = tongtien;
             }
+            donNhapKho.TongGiaTri = int.Parse(txtTongTien.Text);
             donNhapKhoDAO.EditDonNhapKho(donNhapKho);
         }
 
@@ -217,6 +192,28 @@ namespace Cafeteria
         {
             FDanhSachDon fDanhSachDon = new FDanhSachDon();
             fDanhSachDon.ShowDialog();
+        }
+
+        private void txtTongTien_TextChanged(object sender, EventArgs e)
+        {
+            string tien = txtTongTien.Text;
+            if (string.IsNullOrEmpty(tien))
+            {
+                txtTongTien.Text = "0";
+                return;
+            }
+            if (!int.TryParse(tien, out int giatien))
+            {
+                MessageBox.Show("Vui long nhap so tien hop le");
+                return;
+            }
+            if (giatien > tongtien)
+            {
+                MessageBox.Show("So tien vuot qua so tien trong don dat hang");
+                return;
+            }
+            txtTongTien.Text = giatien.ToString();
+
         }
     }
 }
