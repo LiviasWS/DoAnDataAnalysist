@@ -21,6 +21,20 @@ namespace Cafeteria.DTO
         public int NguoiTao { get { return nguoiTao; } set {  nguoiTao = value; } }
         public string GhiChu { get {  return ghiChu; } set {  ghiChu = value; } }
         public DateTime NgayDuKienHetHang { get { return ngayDuKienHetHang; } set { ngayDuKienHetHang = value; } }
-
+        public DonYeuCauNhapHang(int maDonYeuCau, DateTime ngayTao, int idNguoiTao, string ghiChu, DateTime ngayDuKienHetHang)
+        {
+            this.maDonYeuCau = maDonYeuCau;
+            this.ngayTao = ngayTao;
+            this.idNguoiTao = idNguoiTao;
+            this.ghiChu = ghiChu;
+            this.ngayDuKienHetHang = ngayDuKienHetHang;
+        }
+        public DonYeuCauNhapHang(DateTime ngayTao, int idNguoiTao, string ghiChu, DateTime ngayDuKienHetHang)
+        {
+            this.ngayTao = ngayTao;
+            this.idNguoiTao = idNguoiTao;
+            this.ghiChu = ghiChu;
+            this.ngayDuKienHetHang = ngayDuKienHetHang;
+        }
     }
 }

@@ -76,5 +76,23 @@ namespace Cafeteria
             }
             return result;
         }
+        public int ExecuteScalar(string command)
+        {
+            try
+            {
+                sqlCon.Open();
+                SqlCommand cmd = new SqlCommand(command, sqlCon);
+                return Convert.ToInt32(cmd.ExecuteScalar());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return -1;
+            }
+            finally
+            {
+                sqlCon.Close();
+            }
+        }
     }
 }

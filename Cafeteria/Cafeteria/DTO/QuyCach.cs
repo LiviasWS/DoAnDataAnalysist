@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,5 +24,9 @@ namespace Cafeteria.DTO
 
         public int MaQC { get { return maQC; } set {  maQC = value; } }
         public string TenQC { get {  return tenQC; } set {  tenQC = value; } }
+        public override string ToString()
+        {
+            return maQC + " - " + tenQC;
+        }
     }
 }
