@@ -25,14 +25,14 @@ namespace Cafeteria.DTO
         {
             this.maDonYeuCau = maDonYeuCau;
             this.ngayTao = ngayTao;
-            this.idNguoiTao = idNguoiTao;
+            this.NguoiTao = idNguoiTao;
             this.ghiChu = ghiChu;
             this.ngayDuKienHetHang = ngayDuKienHetHang;
         }
         public DonYeuCauNhapHang(DateTime ngayTao, int idNguoiTao, string ghiChu, DateTime ngayDuKienHetHang)
         {
             this.ngayTao = ngayTao;
-            this.idNguoiTao = idNguoiTao;
+            this.NguoiTao = idNguoiTao;
             this.ghiChu = ghiChu;
             this.ngayDuKienHetHang = ngayDuKienHetHang;
         }

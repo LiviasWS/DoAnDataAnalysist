@@ -33,7 +33,6 @@
             this.paymentAmout = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.orderDGV = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnOrderList = new System.Windows.Forms.Button();
+            this.btnGoodIssue = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuDGV)).BeginInit();
@@ -65,7 +65,6 @@
             this.panel1.Controls.Add(this.paymentAmout);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnEdit);
-            this.panel1.Controls.Add(this.btnNext);
             this.panel1.Controls.Add(this.btnRemove);
             this.panel1.Controls.Add(this.orderDGV);
             this.panel1.Controls.Add(this.label5);
@@ -83,7 +82,7 @@
             this.btnOrder.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnOrder.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrder.ForeColor = System.Drawing.Color.White;
-            this.btnOrder.Location = new System.Drawing.Point(367, 525);
+            this.btnOrder.Location = new System.Drawing.Point(442, 520);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(88, 30);
             this.btnOrder.TabIndex = 31;
@@ -124,17 +123,6 @@
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnNext
-            // 
-            this.btnNext.BackgroundImage = global::Cafeteria.Properties.Resources.arrow_right;
-            this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNext.Location = new System.Drawing.Point(494, 521);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(47, 40);
-            this.btnNext.TabIndex = 14;
-            this.btnNext.UseVisualStyleBackColor = true;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnRemove
             // 
@@ -326,13 +314,27 @@
             this.btnOrderList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnOrderList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrderList.ForeColor = System.Drawing.Color.White;
-            this.btnOrderList.Location = new System.Drawing.Point(1191, 170);
+            this.btnOrderList.Location = new System.Drawing.Point(1153, 170);
             this.btnOrderList.Name = "btnOrderList";
-            this.btnOrderList.Size = new System.Drawing.Size(64, 30);
+            this.btnOrderList.Size = new System.Drawing.Size(102, 30);
             this.btnOrderList.TabIndex = 15;
-            this.btnOrderList.Text = "Orders";
+            this.btnOrderList.Text = "Order List";
             this.btnOrderList.UseVisualStyleBackColor = false;
             this.btnOrderList.Click += new System.EventHandler(this.btnOrder_Click);
+            // 
+            // btnGoodIssue
+            // 
+            this.btnGoodIssue.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnGoodIssue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGoodIssue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGoodIssue.ForeColor = System.Drawing.Color.White;
+            this.btnGoodIssue.Location = new System.Drawing.Point(997, 170);
+            this.btnGoodIssue.Name = "btnGoodIssue";
+            this.btnGoodIssue.Size = new System.Drawing.Size(114, 30);
+            this.btnGoodIssue.TabIndex = 16;
+            this.btnGoodIssue.Text = "Goods issue";
+            this.btnGoodIssue.UseVisualStyleBackColor = false;
+            this.btnGoodIssue.Click += new System.EventHandler(this.btnGoodIssue_Click);
             // 
             // FSale
             // 
@@ -340,6 +342,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1293, 848);
+            this.Controls.Add(this.btnGoodIssue);
             this.Controls.Add(this.btnOrderList);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.panel4);
@@ -379,12 +382,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView orderDGV;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Label paymentAmout;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnOrderList;
         private System.Windows.Forms.Button btnOrder;
+        private System.Windows.Forms.Button btnGoodIssue;
     }
 }

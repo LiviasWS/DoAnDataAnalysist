@@ -1,4 +1,5 @@
 ﻿
+using Cafeteria.DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -14,7 +15,7 @@ namespace Cafeteria.DAO
         public void AddDonYeuCauDatHang(DonYeuCauNhapHang donYeuCau)
         {
             string query = string.Format("INSERT INTO DonYeuCauNhapHang (NgayTao, NguoiTao, GhiChu, NgayDuKienHetHang) " +
-                "VALUES ('{0}', {1}, N'{2}', '{3}')",donYeuCau.NgayTao, donYeuCau.IdNguoiTao, donYeuCau.GhiChu,donYeuCau.NgayDuKienHetHang);
+                "VALUES ('{0}', {1}, N'{2}', '{3}')",donYeuCau.NgayTao, donYeuCau.NguoiTao, donYeuCau.GhiChu,donYeuCau.NgayDuKienHetHang);
             db.Execute(query);
         }
         public int AddDonYeuCauDatHangGetId(DonYeuCauNhapHang donYeuCau)

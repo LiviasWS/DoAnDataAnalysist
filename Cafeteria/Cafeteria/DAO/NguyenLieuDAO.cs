@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Cafeteria.DAO
 {
@@ -34,33 +35,36 @@ namespace Cafeteria.DAO
 
         public NguyenLieu GetNguyenLieuById(int id)
         {
-            string query = string.Format("SELECT * FROM NguyenLieu WHERE tenNL = '{0}'", name);
+            string query = string.Format("SELECT * FROM NguyenLieu WHERE MaNL = {0}", id);
             DataTable dt = db.Load(query);
             NguyenLieu nguyenLieu = new NguyenLieu();
             string sqlString = "SELECT * FROM NGUYENLIEU WHERE MANL = " + id + ";";
             DataTable dataTable = conn.Load(sqlString);
-            foreach(DataRow row in dataTable.Rows)
-                {
+            foreach (DataRow row in dataTable.Rows)
+            {
                 nguyenLieu.MaNL = id;
                 nguyenLieu.TenNL = row["tenNL"].ToString();
-                }
-                return nguyenLieu;
             }
+            return nguyenLieu;
+
+        }
 
         public NguyenLieu GetNguyenLieuByName(string name)
         {
-            string query = string.Format("SELECT * FROM NguyenLieu WHERE MaNL = {0}", id);
+            
+            string query = string.Format("SELECT * FROM NguyenLieu WHERE tenNL = '{0}'", name);
             DataTable dt = db.Load(query);
+            
             NguyenLieu nguyenLieu = new NguyenLieu();
             string sqlString = "SELECT * FROM NGUYENLIEU WHERE TENNL = '" + name + "';";
             DataTable dataTable = conn.Load(sqlString);
             foreach (DataRow row in dataTable.Rows)
-                {
+            {
                 nguyenLieu.MaNL = Convert.ToInt32(row["MaNL"]);
                 nguyenLieu.TenNL = name;
-                }
-                return nguyenLieu;
             }
+            return nguyenLieu;
+        }
         public void AddNguyenLieu(NguyenLieu nguyenLieu)
         {
             string query = string.Format("INSERT INTO NguyenLieu (TenNL) VALUES ('{0}')", nguyenLieu.TenNL);

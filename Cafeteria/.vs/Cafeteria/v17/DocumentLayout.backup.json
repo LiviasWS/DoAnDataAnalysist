@@ -3,162 +3,104 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\fsaledashboard.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fsaledashboard.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\fdanhsachdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fdanhsachdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\fkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\fkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\fsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\fnhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fnhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\fxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\fxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\fsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\fyeucaunhaphang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fyeucaunhaphang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\fsaledashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fsaledashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\fyeucaunhaphang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fyeucaunhaphang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\fdanhsachdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fdanhsachdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\dao\\hoadondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dao\\hoadondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dao\\dsnhapkhodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dao\\dsnhapkhodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\fgeneralinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fgeneralinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\dto\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dto\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dao\\dsxuatkhodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dao\\dsxuatkhodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\dto\\donyeucaunhaphang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dto\\donyeucaunhaphang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\dto\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dto\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\dao\\sanphamdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dao\\sanphamdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dao\\donnhapkhodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dao\\donnhapkhodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\fdanhsachdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fdanhsachdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\fnhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fnhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\fyeucaudathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fyeucaudathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dao\\donyeucaudathangdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dao\\donyeucaudathangdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dao\\donxuatkhodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dao\\donxuatkhodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dao\\nltrongkhodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dao\\nltrongkhodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dao\\dsyeucaudathangdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dao\\dsyeucaudathangdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\fnhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fnhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\fxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dto\\donxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dto\\donxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dto\\donnhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dto\\donnhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\fxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\fnhapkho.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fnhapkho.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\fkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dao\\nguyenlieudao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|c:\\users\\administrator\\source\\repos\\doandataanalysist\\cafeteria\\cafeteria\\dao\\nguyenlieudao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dao\\nguyenlieudao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\fyeucaudathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fyeucaudathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\fnhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fnhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dto\\dsxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dto\\dsxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\dao\\donyeucaunhaphangdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dao\\donyeucaunhaphangdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\dto\\nltrongkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dto\\nltrongkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\testclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\testclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dto\\dsyeucaudathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dto\\dsyeucaudathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\dto\\dsyeucaunhaphang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dto\\dsyeucaunhaphang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dto\\donyeucaudathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dto\\donyeucaudathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\dto\\dsnhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dto\\dsnhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\fkho.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fkho.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\dto\\quycach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dto\\quycach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\dao\\quycachdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dao\\quycachdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\fkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\fyeucaudathang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\fyeucaudathang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DonYeuCauNhapHang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cafeteria\\DonYeuCauNhapHang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\YeuCauNhapHang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cafeteria\\YeuCauNhapHang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\NLTrongKho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cafeteria\\NLTrongKho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\QuyCach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cafeteria\\QuyCach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\NguyenLieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cafeteria\\NguyenLieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\cafeteria\\dto\\nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C68469E-0EFC-402E-9D1E-A3DB556051EF}|Cafeteria\\Cafeteria.csproj|solutionrelative:cafeteria\\dto\\nguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -168,37 +110,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
-          "SelectedChildIndex": 26,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FDanhSachDon.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FDanhSachDon.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\FDanhSachDon.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FDanhSachDon.cs",
-              "RelativeToolTip": "Cafeteria\\FDanhSachDon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T06:20:25.591Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FNhapKho.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FNhapKho.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\FNhapKho.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FNhapKho.cs",
-              "RelativeToolTip": "Cafeteria\\FNhapKho.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAcwNIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T01:54:34.982Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -216,470 +129,319 @@
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FSaleDashboard.resx",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FSaleDashboard.resx",
-              "RelativeDocumentMoniker": "Cafeteria\\FSaleDashboard.resx",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FSaleDashboard.resx",
-              "RelativeToolTip": "Cafeteria\\FSaleDashboard.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-24T15:21:13.936Z",
-              "DocumentIndex": 13,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "Cafeteria\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Properties\\Resources.resx",
-              "RelativeToolTip": "Cafeteria\\Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-27T08:35:18.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DAO\\SanPhamDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\SanPhamDAO.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DAO\\SanPhamDAO.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\SanPhamDAO.cs",
-              "RelativeToolTip": "Cafeteria\\DAO\\SanPhamDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T15:08:32.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DAO\\HoaDonDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\HoaDonDAO.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DAO\\HoaDonDAO.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\HoaDonDAO.cs",
-              "RelativeToolTip": "Cafeteria\\DAO\\HoaDonDAO.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBYAAAAzAAAAAAAAAA==",
-              "DocumentIndex": 16,
-              "Title": "DonNhapKho.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DonNhapKho.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DTO\\DonNhapKho.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DonNhapKho.cs",
-              "RelativeToolTip": "Cafeteria\\DTO\\DonNhapKho.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T15:03:05.062Z"
-              "WhenOpened": "2025-04-27T08:13:15.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DSNhapKhoDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DSNhapKhoDAO.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DAO\\DSNhapKhoDAO.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DSNhapKhoDAO.cs",
-              "RelativeToolTip": "Cafeteria\\DAO\\DSNhapKhoDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T07:48:18.924Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DTO\\SanPham.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\SanPham.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DTO\\SanPham.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\SanPham.cs",
-              "RelativeToolTip": "Cafeteria\\DTO\\SanPham.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA5wAgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T15:07:51.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DonNhapKhoDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DonNhapKhoDAO.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DAO\\DonNhapKhoDAO.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DonNhapKhoDAO.cs",
-              "RelativeToolTip": "Cafeteria\\DAO\\DonNhapKhoDAO.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAYwCMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T07:42:35.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FKho.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FKho.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\FKho.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FKho.cs",
-              "RelativeToolTip": "Cafeteria\\FKho.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T14:26:41.953Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FNhapKho.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FNhapKho.Designer.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\FNhapKho.Designer.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FNhapKho.Designer.cs",
-              "RelativeToolTip": "Cafeteria\\FNhapKho.Designer.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAswFUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T07:07:00.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DTO\\HoaDon.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\HoaDon.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DTO\\HoaDon.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\HoaDon.cs",
-              "RelativeToolTip": "Cafeteria\\DTO\\HoaDon.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
-              "Title": "DSXuatKhoDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DSXuatKhoDAO.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DAO\\DSXuatKhoDAO.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DSXuatKhoDAO.cs",
-              "RelativeToolTip": "Cafeteria\\DAO\\DSXuatKhoDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T06:53:20.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DonXuatKhoDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DonXuatKhoDAO.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DAO\\DonXuatKhoDAO.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DonXuatKhoDAO.cs",
-              "RelativeToolTip": "Cafeteria\\DAO\\DonXuatKhoDAO.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwCAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T06:45:37.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FXuatKho.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FXuatKho.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\FXuatKho.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FXuatKho.cs",
-              "RelativeToolTip": "Cafeteria\\FXuatKho.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAUwKAAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T06:21:26.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "FYeuCauDatHang.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FYeuCauDatHang.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\FYeuCauDatHang.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FYeuCauDatHang.cs",
-              "RelativeToolTip": "Cafeteria\\FYeuCauDatHang.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAcwGYAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T05:35:38.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "DSXuatKho.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DSXuatKho.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DTO\\DSXuatKho.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DSXuatKho.cs",
-              "RelativeToolTip": "Cafeteria\\DTO\\DSXuatKho.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T06:21:14.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DonXuatKho.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DonXuatKho.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DTO\\DonXuatKho.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DonXuatKho.cs",
-              "RelativeToolTip": "Cafeteria\\DTO\\DonXuatKho.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T06:01:14.956Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DSYeuCauDatHangDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DSYeuCauDatHangDAO.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DAO\\DSYeuCauDatHangDAO.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DSYeuCauDatHangDAO.cs",
-              "RelativeToolTip": "Cafeteria\\DAO\\DSYeuCauDatHangDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAABnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T05:47:31.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "FKho.resx",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FKho.resx",
-              "RelativeDocumentMoniker": "Cafeteria\\FKho.resx",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FKho.resx",
-              "RelativeToolTip": "Cafeteria\\FKho.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-27T05:28:15.152Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "NguyenLieuDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\NguyenLieuDAO.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DAO\\NguyenLieuDAO.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\NguyenLieuDAO.cs",
-              "RelativeToolTip": "Cafeteria\\DAO\\NguyenLieuDAO.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwBUAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T05:21:16.548Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FYeuCauDatHang.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FYeuCauDatHang.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\FYeuCauDatHang.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FYeuCauDatHang.cs [Design]",
-              "RelativeToolTip": "Cafeteria\\FYeuCauDatHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T05:34:50.643Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DonYeuCauDatHangDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DonYeuCauDatHangDAO.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DAO\\DonYeuCauDatHangDAO.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DonYeuCauDatHangDAO.cs",
-              "RelativeToolTip": "Cafeteria\\DAO\\DonYeuCauDatHangDAO.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAswB8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T04:30:47.008Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "DonYeuCauDatHang.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DonYeuCauDatHang.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DTO\\DonYeuCauDatHang.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DonYeuCauDatHang.cs",
-              "RelativeToolTip": "Cafeteria\\DTO\\DonYeuCauDatHang.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T04:10:16.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "DSYeuCauDatHang.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DSYeuCauDatHang.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DTO\\DSYeuCauDatHang.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DSYeuCauDatHang.cs",
-              "RelativeToolTip": "Cafeteria\\DTO\\DSYeuCauDatHang.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAowBAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T04:46:28.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FXuatKho.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FXuatKho.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\FXuatKho.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FXuatKho.cs [Design]",
-              "RelativeToolTip": "Cafeteria\\FXuatKho.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T08:01:55.732Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Program.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Program.cs",
-              "RelativeToolTip": "Cafeteria\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBIAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T15:05:41.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Program.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Program.cs",
-              "RelativeToolTip": "Cafeteria\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBIAAAAlAAAAAAAAAA==",
-              "DocumentIndex": 6,
-              "Title": "FNhapKho.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FNhapKho.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\FNhapKho.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FNhapKho.cs [Design]",
-              "RelativeToolTip": "Cafeteria\\FNhapKho.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T08:01:33.945Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "FDanhSachDon.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FDanhSachDon.cs",
               "RelativeDocumentMoniker": "Cafeteria\\FDanhSachDon.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FDanhSachDon.cs [Design]",
               "RelativeToolTip": "Cafeteria\\FDanhSachDon.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T15:02:51.817Z"
-              "WhenOpened": "2025-04-21T07:17:26.111Z",
+              "WhenOpened": "2025-04-27T15:19:37.82Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 2,
               "Title": "FKho.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FKho.cs",
               "RelativeDocumentMoniker": "Cafeteria\\FKho.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FKho.cs [Design]",
               "RelativeToolTip": "Cafeteria\\FKho.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T12:18:39.806Z"
+              "WhenOpened": "2025-04-27T15:18:06.24Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FXuatKho.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FXuatKho.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\FXuatKho.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FXuatKho.cs",
+              "RelativeToolTip": "Cafeteria\\FXuatKho.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAvwLsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T15:17:08.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FXuatKho.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FXuatKho.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\FXuatKho.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FXuatKho.cs [Design]",
+              "RelativeToolTip": "Cafeteria\\FXuatKho.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T15:17:06.38Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FSale.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FSale.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\FSale.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FSale.cs",
+              "RelativeToolTip": "Cafeteria\\FSale.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAAK8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T15:15:01.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FSale.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FSale.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\FSale.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FSale.cs [Design]",
+              "RelativeToolTip": "Cafeteria\\FSale.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T15:12:46.71Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FNhapKho.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FNhapKho.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\FNhapKho.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FNhapKho.cs [Design]",
+              "RelativeToolTip": "Cafeteria\\FNhapKho.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T15:12:43.855Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FLogin.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\FLogin.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FLogin.cs",
+              "RelativeToolTip": "Cafeteria\\FLogin.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAgwEcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T15:03:49.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FKho.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FKho.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\FKho.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FKho.cs",
+              "RelativeToolTip": "Cafeteria\\FKho.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAnwIYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:46:04.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FLogin.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\FLogin.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FLogin.cs [Design]",
+              "RelativeToolTip": "Cafeteria\\FLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T15:03:47.895Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FYeuCauNhapHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FYeuCauNhapHang.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\FYeuCauNhapHang.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FYeuCauNhapHang.cs [Design]",
+              "RelativeToolTip": "Cafeteria\\FYeuCauNhapHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T15:02:35.095Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "NLTrongKhoDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\NLTrongKhoDAO.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DAO\\NLTrongKhoDAO.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\NLTrongKhoDAO.cs",
-              "RelativeToolTip": "Cafeteria\\DAO\\NLTrongKhoDAO.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAADwvx8AAAAJAAAAAAAAAA==",
+              "Title": "FYeuCauNhapHang.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FYeuCauNhapHang.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\FYeuCauNhapHang.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FYeuCauNhapHang.cs",
+              "RelativeToolTip": "Cafeteria\\FYeuCauNhapHang.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAtwKMAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:56:53.55Z",
+              "WhenOpened": "2025-04-27T15:01:20.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "QuyCachDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\QuyCachDAO.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DAO\\QuyCachDAO.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\QuyCachDAO.cs",
-              "RelativeToolTip": "Cafeteria\\DAO\\QuyCachDAO.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAIwD4AAAArAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "FSaleDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FSaleDashboard.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\FSaleDashboard.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FSaleDashboard.cs",
+              "RelativeToolTip": "Cafeteria\\FSaleDashboard.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwFcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T21:27:50.584Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "FYeuCauDatHang.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FYeuCauDatHang.Designer.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\FYeuCauDatHang.Designer.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FYeuCauDatHang.Designer.cs",
-              "RelativeToolTip": "Cafeteria\\FYeuCauDatHang.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T06:20:32.986Z",
+              "WhenOpened": "2025-04-27T14:46:17.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "DonYeuCauNhapHang.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DonYeuCauNhapHang.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DonYeuCauNhapHang.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DonYeuCauNhapHang.cs",
-              "RelativeToolTip": "Cafeteria\\DonYeuCauNhapHang.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "FNhapKho.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FNhapKho.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\FNhapKho.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FNhapKho.cs",
+              "RelativeToolTip": "Cafeteria\\FNhapKho.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwFcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T06:08:53.411Z"
+              "WhenOpened": "2025-04-27T14:46:13.285Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "YeuCauNhapHang.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\YeuCauNhapHang.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\YeuCauNhapHang.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\YeuCauNhapHang.cs",
-              "RelativeToolTip": "Cafeteria\\YeuCauNhapHang.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T05:59:51.432Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "TestClass.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\TestClass.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\TestClass.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\TestClass.cs",
-              "RelativeToolTip": "Cafeteria\\TestClass.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T14:28:42.475Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 19,
               "Title": "NLTrongKho.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\NLTrongKho.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\NLTrongKho.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\NLTrongKho.cs",
-              "RelativeToolTip": "Cafeteria\\NLTrongKho.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\NLTrongKho.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\DTO\\NLTrongKho.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\NLTrongKho.cs",
+              "RelativeToolTip": "Cafeteria\\DTO\\NLTrongKho.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBsAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T13:26:40.116Z"
+              "WhenOpened": "2025-04-27T14:45:41.12Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "QuyCach.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\QuyCach.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\QuyCach.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\QuyCach.cs",
-              "RelativeToolTip": "Cafeteria\\QuyCach.cs",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Program.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Program.cs",
+              "RelativeToolTip": "Cafeteria\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T13:25:30.834Z"
+              "WhenOpened": "2025-04-27T14:39:23.057Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "NguyenLieu.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\NguyenLieu.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\NguyenLieu.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\NguyenLieu.cs",
-              "RelativeToolTip": "Cafeteria\\NguyenLieu.cs",
+              "DocumentIndex": 16,
+              "Title": "NguyenLieuDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\NguyenLieuDAO.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\DAO\\NguyenLieuDAO.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\NguyenLieuDAO.cs",
+              "RelativeToolTip": "Cafeteria\\DAO\\NguyenLieuDAO.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowC8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T13:19:52.833Z"
+              "WhenOpened": "2025-04-27T14:50:53.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FGeneralInformation.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FGeneralInformation.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\FGeneralInformation.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\FGeneralInformation.cs",
+              "RelativeToolTip": "Cafeteria\\FGeneralInformation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:56:19.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DonYeuCauNhapHang.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DonYeuCauNhapHang.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\DTO\\DonYeuCauNhapHang.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DonYeuCauNhapHang.cs",
+              "RelativeToolTip": "Cafeteria\\DTO\\DonYeuCauNhapHang.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAywCIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:56:08.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\Properties\\Resources.Designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "Cafeteria\\Properties\\Resources.Designer.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAA2wHkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:45:18.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DonYeuCauNhapHangDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DonYeuCauNhapHangDAO.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\DAO\\DonYeuCauNhapHangDAO.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DAO\\DonYeuCauNhapHangDAO.cs",
+              "RelativeToolTip": "Cafeteria\\DAO\\DonYeuCauNhapHangDAO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBEAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:45:14.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DSYeuCauNhapHang.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DSYeuCauNhapHang.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\DTO\\DSYeuCauNhapHang.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DSYeuCauNhapHang.cs",
+              "RelativeToolTip": "Cafeteria\\DTO\\DSYeuCauNhapHang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:45:10.234Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "DBConnection.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DBConnection.cs",
-              "RelativeDocumentMoniker": "Cafeteria\\DBConnection.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DBConnection.cs",
-              "RelativeToolTip": "Cafeteria\\DBConnection.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAADwvzkAAAATAAAAAAAAAA==",
+              "Title": "QuyCach.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\QuyCach.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\DTO\\QuyCach.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\QuyCach.cs",
+              "RelativeToolTip": "Cafeteria\\DTO\\QuyCach.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T14:08:51.139Z"
+              "WhenOpened": "2025-04-27T14:44:55.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DSNhapKho.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DSNhapKho.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\DTO\\DSNhapKho.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\DSNhapKho.cs",
+              "RelativeToolTip": "Cafeteria\\DTO\\DSNhapKho.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:44:30.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NguyenLieu.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\NguyenLieu.cs",
+              "RelativeDocumentMoniker": "Cafeteria\\DTO\\NguyenLieu.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\DoAnDataAnalysist\\Cafeteria\\Cafeteria\\DTO\\NguyenLieu.cs",
+              "RelativeToolTip": "Cafeteria\\DTO\\NguyenLieu.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:44:08.348Z"
             }
           ]
         },

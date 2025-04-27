@@ -26,7 +26,6 @@ namespace Cafeteria.DTO
             this.quyCach = quyCach;
         }
         public int MaNL { get { return maNL; } set {  maNL = value; } }
-        public int SoLuong { get {  return soLuong; } set {  soLuong = value; } }
         public int MaQC { get { return maQC; } set { maQC = value; } }
     }
 }

@@ -170,5 +170,13 @@ namespace Cafeteria
             drv.Row.Delete();
             bsOrder.EndEdit();
         }
+
+        private void btnGoodIssue_Click(object sender, EventArgs e)
+        {
+            FXuatKho list = new FXuatKho();
+            list.Show();
+            list.StartPosition = FormStartPosition.CenterScreen;
+            this.Hide();
+        }
     }
 }

@@ -18,9 +18,8 @@ namespace Cafeteria.DTO
         {
             this.maNL = maNL;
             this.tenNL = tenNL;
+        }
 
-        public int MaNL { get { return maNL; } set { maNL = value; } }
-        public string TenNL { get { return tenNL; } set { tenNL = value; } }
         public override string ToString()
         {
             return $"{maNL} - {tenNL}";

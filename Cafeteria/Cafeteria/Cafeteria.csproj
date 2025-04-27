@@ -73,10 +73,8 @@
     <Compile Include="DAO\NhaCungCapDAO.cs" />
     <Compile Include="DAO\NLTrongKhoDAO.cs" />
     <Compile Include="DAO\QuyCachDAO.cs" />
-    <Compile Include="DAO\SanPhamDAO.cs" />
     <Compile Include="DAO\ChiTietDonHangDAO.cs" />
     <Compile Include="DAO\DonHangDAO.cs" />
-    <Compile Include="DAO\HoaDonDAO.cs" />
     <Compile Include="DAO\HoaDonDonHangDAO.cs" />
     <Compile Include="DAO\SanPhamDAO.cs" />
     <Compile Include="DAO\DonNhapKhoDAO.cs" />
@@ -85,19 +83,17 @@
     <Compile Include="DAO\DSNhapKhoDAO.cs" />
     <Compile Include="DAO\DSXuatKhoDAO.cs" />
     <Compile Include="DAO\DSYeuCauNhapHangDAO.cs" />
-    <Compile Include="DAO\NguyenLieuDAO.cs" />
-    <Compile Include="DAO\NLTrongKhoDAO.cs" />
-    <Compile Include="DAO\QuyCachDAO.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="DTO\DonDatHang.cs" />
-    <Compile Include="DTO\DonYeuCauNhapHang.cs" />
     <Compile Include="DTO\HoaDon.cs" />
     <Compile Include="DTO\NguyenLieu.cs" />
     <Compile Include="DTO\NhaCungCap.cs" />
     <Compile Include="DTO\NLTrongKho.cs" />
     <Compile Include="DTO\QuyCach.cs" />
     <Compile Include="DTO\SanPham.cs" />
-    <Compile Include="FDatNguyenLieu.cs"/>
+    <Compile Include="FDatNguyenLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DTO\DonNhapKho.cs" />
     <Compile Include="DTO\DonXuatKho.cs" />
     <Compile Include="DTO\DonYeuCauNhapHang.cs" />
@@ -106,8 +102,9 @@
     <Compile Include="FDanhSachDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FDatNguyenLieu.Designer.cs"/>
+    <Compile Include="FDatNguyenLieu.Designer.cs">
       <DependentUpon>FDatNguyenLieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FDanhSachDon.Designer.cs">
       <DependentUpon>FDanhSachDon.cs</DependentUpon>
     </Compile>
@@ -125,9 +122,7 @@
     </Compile>
     <Compile Include="DTO\ChiTietDonHang.cs" />
     <Compile Include="DTO\DonHang.cs" />
-    <Compile Include="DTO\HoaDon.cs" />
     <Compile Include="DTO\HoaDonDonHang.cs" />
-    <Compile Include="DTO\SanPham.cs" />
     <Compile Include="FBill.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,12 +201,6 @@
     <Compile Include="FThongTinDatHang.Designer.cs">
       <DependentUpon>FThongTinDatHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="FYeuCauDathang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FYeuCauDathang.Designer.cs">
-      <DependentUpon>FYeuCauDathang.cs</DependentUpon>
-    </Compile>
     <Compile Include="FKho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,14 +219,16 @@
     <Compile Include="FXuatKho.Designer.cs">
       <DependentUpon>FXuatKho.cs</DependentUpon>
     </Compile>
-    <Compile Include="FYeuCauDatHang.cs">
+    <Compile Include="FYeuCauDathang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FYeuCauDatHang.Designer.cs">
-      <DependentUpon>FYeuCauDatHang.cs</DependentUpon>
+    <Compile Include="FYeuCauDathang.Designer.cs">
+      <DependentUpon>FYeuCauDathang.cs</DependentUpon>
     </Compile>
-    <Compile Include="DTO\NguyenLieu.cs" />
-    <Compile Include="DTO\NLTrongKho.cs" />
+    <Compile Include="FYeuCauNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FYeuCauNhapHang.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UCDatHangItem.cs">
@@ -357,10 +348,6 @@
     <EmbeddedResource Include="FThongTinDatHang.resx">
       <DependentUpon>FThongTinDatHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FYeuCauDathang.resx">
-      <DependentUpon>FYeuCauDathang.cs</DependentUpon>
-	</EmbeddedResource>
-    <Compile Include="DTO\QuyCach.cs" />
     <Compile Include="TestClass.cs" />
     <Compile Include="DTO\DSYeuCauNhapHang.cs" />
     <EmbeddedResource Include="FDanhSachDon.resx">
@@ -375,9 +362,10 @@
     <EmbeddedResource Include="FXuatKho.resx">
       <DependentUpon>FXuatKho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FYeuCauDatHang.resx">
-      <DependentUpon>FYeuCauDatHang.cs</DependentUpon>
+    <EmbeddedResource Include="FYeuCauDathang.resx">
+      <DependentUpon>FYeuCauDathang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FYeuCauNhapHang.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -451,52 +439,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\arrow-right.png" />
-    <None Include="Resources\left-arrow1.png" />
-    <None Include="Resources\arrow-right1.png" />
-    <Content Include="Resources\background-login.jpg" />
-    <None Include="Resources\cafe1.png" />
-    <None Include="Resources\loginn1.png" />
-    <None Include="Resources\expresso1.png" />
-    <None Include="Resources\background-login1.jpg" />
-    <Content Include="Resources\cafe.png" />
-    <Content Include="Resources\cake.png" />
-    <Content Include="Resources\coffee-5246830_1280.jpg" />
-    <Content Include="Resources\credit-card.png" />
-    <Content Include="Resources\dollars.png" />
-    <Content Include="Resources\ellipsis.png" />
-    <Content Include="Resources\expresso.png" />
-    <Content Include="Resources\latte-art.png" />
-    <Content Include="Resources\left-arrow.png" />
-    <Content Include="Resources\login.png" />
-    <Content Include="Resources\loginn.png" />
-    <Content Include="Resources\orange-juice.png" />
-    <Content Include="Resources\plus.png" />
-    <Content Include="Resources\qr-code-scan.png" />
-    <Content Include="Resources\select-all.png" />
-    <Content Include="Resources\tea.png" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <Content Include="Resources\arrow-right.png" />
+    <Content Include="Resources\left-arrow1.png" />
     <Content Include="Resources\arrow-right1.png" />
     <Content Include="Resources\background-login.jpg" />
+    <Content Include="Resources\cafe1.png" />
+    <Content Include="Resources\loginn1.png" />
+    <Content Include="Resources\expresso1.png" />
     <Content Include="Resources\background-login1.jpg" />
     <Content Include="Resources\cafe.png" />
-    <Content Include="Resources\cafe1.png" />
-    <None Include="Resources\cafe2.png" />
     <Content Include="Resources\cake.png" />
     <Content Include="Resources\coffee-5246830_1280.jpg" />
     <Content Include="Resources\credit-card.png" />
     <Content Include="Resources\dollars.png" />
     <Content Include="Resources\ellipsis.png" />
     <Content Include="Resources\expresso.png" />
-    <Content Include="Resources\expresso1.png" />
     <Content Include="Resources\latte-art.png" />
     <Content Include="Resources\left-arrow.png" />
-    <Content Include="Resources\left-arrow1.png" />
     <Content Include="Resources\login.png" />
     <Content Include="Resources\loginn.png" />
-    <Content Include="Resources\loginn1.png" />
     <Content Include="Resources\orange-juice.png" />
     <Content Include="Resources\plus.png" />
     <Content Include="Resources\qr-code-scan.png" />

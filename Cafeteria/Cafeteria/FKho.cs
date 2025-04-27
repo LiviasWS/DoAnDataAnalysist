@@ -1,4 +1,5 @@
 ﻿using Cafeteria.DAO;
+using Cafeteria.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -129,11 +130,10 @@ namespace Cafeteria
             txtSL.Text = dGVNLTrongKho.Rows[t].Cells[1].Value.ToString();
             cbbQC.Text = dGVNLTrongKho.Rows[t].Cells[2].Value.ToString();
         }
-
-        private void btnList_Click(object sender, EventArgs e)
+        private void btnList_Click_1(object sender, EventArgs e)
         {
             FDanhSachDon fDanhSachDon = new FDanhSachDon();
-            fDanhSachDon.ShowDialog();
+            fDanhSachDon.Show();
             this.Hide();
         }
     }
