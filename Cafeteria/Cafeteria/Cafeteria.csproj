@@ -97,7 +97,7 @@
     <Compile Include="DTO\NLTrongKho.cs" />
     <Compile Include="DTO\QuyCach.cs" />
     <Compile Include="DTO\SanPham.cs" />
-    <Compile Include="FDatNguyenLieu.cs">
+    <Compile Include="FDatNguyenLieu.cs"/>
     <Compile Include="DTO\DonNhapKho.cs" />
     <Compile Include="DTO\DonXuatKho.cs" />
     <Compile Include="DTO\DonYeuCauNhapHang.cs" />
@@ -106,7 +106,7 @@
     <Compile Include="FDanhSachDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FDatNguyenLieu.Designer.cs">
+    <Compile Include="FDatNguyenLieu.Designer.cs"/>
       <DependentUpon>FDatNguyenLieu.cs</DependentUpon>
     <Compile Include="FDanhSachDon.Designer.cs">
       <DependentUpon>FDanhSachDon.cs</DependentUpon>
@@ -359,6 +359,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FYeuCauDathang.resx">
       <DependentUpon>FYeuCauDathang.cs</DependentUpon>
+	</EmbeddedResource>
     <Compile Include="DTO\QuyCach.cs" />
     <Compile Include="TestClass.cs" />
     <Compile Include="DTO\DSYeuCauNhapHang.cs" />
