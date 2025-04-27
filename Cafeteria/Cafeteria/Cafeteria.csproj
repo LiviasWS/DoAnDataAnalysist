@@ -61,17 +61,72 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\DonNhapKhoDAO.cs" />
+    <Compile Include="DAO\DonXuatKhoDAO.cs" />
+    <Compile Include="DAO\DonYeuCauDatHangDAO.cs" />
+    <Compile Include="DAO\DSNhapKhoDAO.cs" />
+    <Compile Include="DAO\DSXuatKhoDAO.cs" />
+    <Compile Include="DAO\DSYeuCauDatHangDAO.cs" />
+    <Compile Include="DAO\NguyenLieuDAO.cs" />
+    <Compile Include="DAO\NLTrongKhoDAO.cs" />
+    <Compile Include="DAO\QuyCachDAO.cs" />
     <Compile Include="DBConnection.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="DTO\DonNhapKho.cs" />
+    <Compile Include="DTO\DonXuatKho.cs" />
+    <Compile Include="DTO\DonYeuCauDatHang.cs" />
+    <Compile Include="DTO\DSNhapKho.cs" />
+    <Compile Include="DTO\DSXuatKho.cs" />
+    <Compile Include="FDanhSachDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FDanhSachDon.Designer.cs">
+      <DependentUpon>FDanhSachDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="FKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKho.Designer.cs">
+      <DependentUpon>FKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FNhapKho.Designer.cs">
+      <DependentUpon>FNhapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FXuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FXuatKho.Designer.cs">
+      <DependentUpon>FXuatKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FYeuCauDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FYeuCauDatHang.Designer.cs">
+      <DependentUpon>FYeuCauDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\NguyenLieu.cs" />
+    <Compile Include="DTO\NLTrongKho.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="DTO\QuyCach.cs" />
+    <Compile Include="TestClass.cs" />
+    <Compile Include="DTO\DSYeuCauDatHang.cs" />
+    <EmbeddedResource Include="FDanhSachDon.resx">
+      <DependentUpon>FDanhSachDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKho.resx">
+      <DependentUpon>FKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FNhapKho.resx">
+      <DependentUpon>FNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FXuatKho.resx">
+      <DependentUpon>FXuatKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FYeuCauDatHang.resx">
+      <DependentUpon>FYeuCauDatHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,6 +136,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -106,6 +162,33 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\arrow-right.png" />
+    <Content Include="Resources\arrow-right1.png" />
+    <Content Include="Resources\background-login.jpg" />
+    <Content Include="Resources\background-login1.jpg" />
+    <Content Include="Resources\cafe.png" />
+    <Content Include="Resources\cafe1.png" />
+    <None Include="Resources\cafe2.png" />
+    <Content Include="Resources\cake.png" />
+    <Content Include="Resources\coffee-5246830_1280.jpg" />
+    <Content Include="Resources\credit-card.png" />
+    <Content Include="Resources\dollars.png" />
+    <Content Include="Resources\ellipsis.png" />
+    <Content Include="Resources\expresso.png" />
+    <Content Include="Resources\expresso1.png" />
+    <Content Include="Resources\latte-art.png" />
+    <Content Include="Resources\left-arrow.png" />
+    <Content Include="Resources\left-arrow1.png" />
+    <Content Include="Resources\login.png" />
+    <Content Include="Resources\loginn.png" />
+    <Content Include="Resources\loginn1.png" />
+    <Content Include="Resources\orange-juice.png" />
+    <Content Include="Resources\plus.png" />
+    <Content Include="Resources\qr-code-scan.png" />
+    <Content Include="Resources\select-all.png" />
+    <Content Include="Resources\tea.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
