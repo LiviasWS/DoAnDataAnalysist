@@ -228,7 +228,9 @@
     <Compile Include="FYeuCauNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FYeuCauNhapHang.Designer.cs" />
+    <Compile Include="FYeuCauNhapHang.Designer.cs">
+      <DependentUpon>FYeuCauNhapHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UCDatHangItem.cs">
@@ -365,7 +367,9 @@
     <EmbeddedResource Include="FYeuCauDathang.resx">
       <DependentUpon>FYeuCauDathang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FYeuCauNhapHang.resx" />
+    <EmbeddedResource Include="FYeuCauNhapHang.resx">
+      <DependentUpon>FYeuCauNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
