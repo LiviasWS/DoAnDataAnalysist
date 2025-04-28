@@ -47,9 +47,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -179,42 +179,46 @@
             // lblNgayTao
             // 
             this.lblNgayTao.AutoSize = true;
-            this.lblNgayTao.Location = new System.Drawing.Point(159, 82);
+            this.lblNgayTao.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayTao.Location = new System.Drawing.Point(105, 83);
             this.lblNgayTao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNgayTao.Name = "lblNgayTao";
-            this.lblNgayTao.Size = new System.Drawing.Size(44, 16);
+            this.lblNgayTao.Size = new System.Drawing.Size(72, 20);
             this.lblNgayTao.TabIndex = 5;
-            this.lblNgayTao.Text = "label1";
+            this.lblNgayTao.Text = "Ngày tạo";
             // 
             // lblNgayTrienKhai
             // 
             this.lblNgayTrienKhai.AutoSize = true;
-            this.lblNgayTrienKhai.Location = new System.Drawing.Point(159, 125);
+            this.lblNgayTrienKhai.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayTrienKhai.Location = new System.Drawing.Point(105, 126);
             this.lblNgayTrienKhai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNgayTrienKhai.Name = "lblNgayTrienKhai";
-            this.lblNgayTrienKhai.Size = new System.Drawing.Size(44, 16);
+            this.lblNgayTrienKhai.Size = new System.Drawing.Size(115, 20);
             this.lblNgayTrienKhai.TabIndex = 6;
-            this.lblNgayTrienKhai.Text = "label2";
+            this.lblNgayTrienKhai.Text = "Ngày triển khai";
             // 
             // lblGhiChu
             // 
             this.lblGhiChu.AutoSize = true;
-            this.lblGhiChu.Location = new System.Drawing.Point(159, 169);
+            this.lblGhiChu.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGhiChu.Location = new System.Drawing.Point(105, 170);
             this.lblGhiChu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGhiChu.Name = "lblGhiChu";
-            this.lblGhiChu.Size = new System.Drawing.Size(44, 16);
+            this.lblGhiChu.Size = new System.Drawing.Size(61, 20);
             this.lblGhiChu.TabIndex = 7;
-            this.lblGhiChu.Text = "label3";
+            this.lblGhiChu.Text = "Ghi chú";
             // 
             // lblTongTien
             // 
             this.lblTongTien.AutoSize = true;
-            this.lblTongTien.Location = new System.Drawing.Point(159, 212);
+            this.lblTongTien.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongTien.Location = new System.Drawing.Point(105, 213);
             this.lblTongTien.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTongTien.Name = "lblTongTien";
-            this.lblTongTien.Size = new System.Drawing.Size(44, 16);
+            this.lblTongTien.Size = new System.Drawing.Size(74, 20);
             this.lblTongTien.TabIndex = 8;
-            this.lblTongTien.Text = "label4";
+            this.lblTongTien.Text = "Tổng tiền";
             // 
             // lblId
             // 
@@ -290,6 +294,17 @@
             this.panel1.Size = new System.Drawing.Size(552, 554);
             this.panel1.TabIndex = 14;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(64, 242);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(435, 16);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "---------------------------------------------------------------------------------" +
+    "--------------------------\r\n";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -310,17 +325,6 @@
             this.label9.Size = new System.Drawing.Size(435, 16);
             this.label9.TabIndex = 15;
             this.label9.Text = "---------------------------------------------------------------------------------" +
-    "--------------------------\r\n";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(64, 242);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(435, 16);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "---------------------------------------------------------------------------------" +
     "--------------------------\r\n";
             // 
             // btnBack
@@ -353,10 +357,10 @@
             this.button2.BackColor = System.Drawing.Color.Gainsboro;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(900, 691);
+            this.button2.Location = new System.Drawing.Point(876, 691);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 34);
+            this.button2.Size = new System.Drawing.Size(150, 34);
             this.button2.TabIndex = 16;
             this.button2.Text = "Nhập thêm hàng";
             this.button2.UseVisualStyleBackColor = false;
