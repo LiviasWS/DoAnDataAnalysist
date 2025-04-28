@@ -191,7 +191,8 @@ namespace Cafeteria
         private void btnList_Click(object sender, EventArgs e)
         {
             FDanhSachDon fDanhSachDon = new FDanhSachDon();
-            fDanhSachDon.ShowDialog();
+            fDanhSachDon.Show();
+            this.Hide();
         }
 
         private void txtTongTien_TextChanged(object sender, EventArgs e)

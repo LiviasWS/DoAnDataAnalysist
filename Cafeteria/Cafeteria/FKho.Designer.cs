@@ -46,6 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnList = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dGVNLTrongKho)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -56,7 +57,7 @@
             // 
             this.dGVNLTrongKho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGVNLTrongKho.Location = new System.Drawing.Point(32, 167);
-            this.dGVNLTrongKho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dGVNLTrongKho.Margin = new System.Windows.Forms.Padding(4);
             this.dGVNLTrongKho.Name = "dGVNLTrongKho";
             this.dGVNLTrongKho.RowHeadersWidth = 51;
             this.dGVNLTrongKho.Size = new System.Drawing.Size(623, 404);
@@ -66,11 +67,12 @@
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(96, 320);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAdd.Location = new System.Drawing.Point(108, 310);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 41);
+            this.btnAdd.Size = new System.Drawing.Size(75, 33);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -79,7 +81,7 @@
             // txtTenNL
             // 
             this.txtTenNL.Location = new System.Drawing.Point(199, 119);
-            this.txtTenNL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenNL.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenNL.Name = "txtTenNL";
             this.txtTenNL.Size = new System.Drawing.Size(132, 22);
             this.txtTenNL.TabIndex = 2;
@@ -87,7 +89,7 @@
             // txtSL
             // 
             this.txtSL.Location = new System.Drawing.Point(199, 169);
-            this.txtSL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSL.Margin = new System.Windows.Forms.Padding(4);
             this.txtSL.Name = "txtSL";
             this.txtSL.Size = new System.Drawing.Size(132, 22);
             this.txtSL.TabIndex = 3;
@@ -96,19 +98,20 @@
             // 
             this.cbbQC.FormattingEnabled = true;
             this.cbbQC.Location = new System.Drawing.Point(199, 223);
-            this.cbbQC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbQC.Margin = new System.Windows.Forms.Padding(4);
             this.cbbQC.Name = "cbbQC";
             this.cbbQC.Size = new System.Drawing.Size(132, 24);
             this.cbbQC.TabIndex = 4;
             // 
             // btnEdit
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(199, 320);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEdit.Location = new System.Drawing.Point(211, 310);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(80, 41);
+            this.btnEdit.Size = new System.Drawing.Size(80, 33);
             this.btnEdit.TabIndex = 5;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -129,7 +132,7 @@
             this.panel1.Controls.Add(this.cbbQC);
             this.panel1.Controls.Add(this.txtSL);
             this.panel1.Location = new System.Drawing.Point(683, 167);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(399, 404);
             this.panel1.TabIndex = 7;
@@ -205,7 +208,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1123, 90);
             this.panel2.TabIndex = 8;
@@ -238,7 +241,7 @@
             // 
             this.pictureBox1.Image = global::Cafeteria.Properties.Resources.cafe;
             this.pictureBox1.Location = new System.Drawing.Point(1004, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 53);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -253,11 +256,22 @@
             this.btnList.ForeColor = System.Drawing.Color.White;
             this.btnList.Location = new System.Drawing.Point(58, 583);
             this.btnList.Name = "btnList";
-            this.btnList.Size = new System.Drawing.Size(114, 30);
+            this.btnList.Size = new System.Drawing.Size(91, 30);
             this.btnList.TabIndex = 17;
             this.btnList.Text = "List";
             this.btnList.UseVisualStyleBackColor = false;
             this.btnList.Click += new System.EventHandler(this.btnList_Click_1);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(305, 126);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(111, 25);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "KHO HÀNG";
             // 
             // FKho
             // 
@@ -265,11 +279,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1124, 625);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dGVNLTrongKho);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FKho";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dGVNLTrongKho)).EndInit();
@@ -279,6 +294,7 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -302,6 +318,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnList;
+        private System.Windows.Forms.Label label9;
     }
 }
 

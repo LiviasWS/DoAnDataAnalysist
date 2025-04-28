@@ -123,5 +123,26 @@ namespace Cafeteria
             }
             Form_Load();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FKho fOrderList = new FKho();
+            fOrderList.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FYeuCauNhapHang fOrderList = new FYeuCauNhapHang();
+            fOrderList.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FNhapKho fOrderList = new FNhapKho();
+            fOrderList.Show();
+            this.Hide();
+        }
     }
 }
